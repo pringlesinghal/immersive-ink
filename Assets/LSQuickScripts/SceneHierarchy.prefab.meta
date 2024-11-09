@@ -1,0 +1,56 @@
+- !<AssetImportMetadata/f802ed22-721a-4e46-94d3-e56832bdbddd>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 85243182-30b4-4e63-923d-17ac8c6dcbee
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 85243182-30b4-4e63-923d-17ac8c6dcbee
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 6d1ffa88-5e45-4c43-b75e-3abf50718a6f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/e8903804-6d0f-49e7-8228-1b7a02ce120f>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/6d1ffa88-5e45-4c43-b75e-3abf50718a6f>
+  SourceRemaps:
+    - b25116dd-18bf-4fec-9ef7-b382b602bded: cb392e1c-b46f-4355-a776-ef0a0956dc12
+    - b3842ff2-3ed1-4859-a127-492d85be4dbd: c4b3cac0-511a-484f-87af-4ba4005938c4
+  SourceState: !<own> 97100726-9467-4b3f-b70a-6de968d40133
+- !<ObjectPrefab/97100726-9467-4b3f-b70a-6de968d40133>
+  PackagePath: ""
+  objects:
+    - !<own> c4b3cac0-511a-484f-87af-4ba4005938c4
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/c4b3cac0-511a-484f-87af-4ba4005938c4>
+  PrefabRemaps:
+    []
+  Name: LSQuickScripts
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> cb392e1c-b46f-4355-a776-ef0a0956dc12
+- !<ScriptComponent/cb392e1c-b46f-4355-a776-ef0a0956dc12>
+  PrefabRemaps:
+    []
+  Name: LSQuickScripts
+  Enabled: true
+  ScriptAsset: !<reference> 177bb9c0-1305-460b-a624-a35c97e0d8ca
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
