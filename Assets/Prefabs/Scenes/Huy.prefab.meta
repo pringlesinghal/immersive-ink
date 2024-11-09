@@ -1,0 +1,180 @@
+- !<AssetImportMetadata/6c54479a-080f-42fb-93dc-8a678490873e>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 9a34b5c7-8d3e-4f1f-a904-7456cadbc3df
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 9a34b5c7-8d3e-4f1f-a904-7456cadbc3df
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 124204f7-387c-4238-af6c-583023be3a62
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/9142d031-21b7-4a62-abce-0a48aebb76ef>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/0955d489-4736-44c6-989b-fec436645689>
+  PrefabRemaps:
+    []
+  Name: TestBox
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -13.528814}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> af38c038-46d9-4a9a-8b75-cd45928be75b
+- !<ObjectPrefabAssetData/124204f7-387c-4238-af6c-583023be3a62>
+  SourceRemaps:
+    - 010759b9-5512-4a73-a2e2-d1dc0d1cf471: d1d48298-5dfb-4fb9-9741-b7552ccce164
+    - 26f2cfa8-fdea-4106-b513-74222f6ec3b9: d0f39790-9a37-4ba1-9f0a-4d20a020e3a1
+    - 30efc58b-3066-4507-baaf-3a02fa4d032c: af38c038-46d9-4a9a-8b75-cd45928be75b
+    - 34083e3c-e771-4944-9d79-1a5a9d02f98f: 94284b75-ab36-4537-9169-ab7219bc6458
+    - 38c2eb53-8a34-4107-a2e5-ff75055487ed: ce677143-8218-44bd-9a85-df589c3a11ad
+    - 3e62efb2-77a9-46e4-951a-0c0f9425f198: 0955d489-4736-44c6-989b-fec436645689
+    - 6952f11c-897f-4ecb-9b70-09823e1ec926: ad40a612-e2af-484b-b946-c1991522aa7b
+    - 9ed6cf6e-810d-4e84-b7df-da2b9be00f53: 1e942fcc-ec64-422e-9943-eb2a64bba79d
+    - ea213e99-48ec-4e9d-93c2-29d3bf595167: 8309ff21-54ec-4867-8f22-20969c49c014
+  SourceState: !<own> fecface3-de33-422d-98f2-ba7a99e2dc63
+- !<SceneObject/1e942fcc-ec64-422e-9943-eb2a64bba79d>
+  PrefabRemaps:
+    []
+  Name: TestRequireMePrint
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ce677143-8218-44bd-9a85-df589c3a11ad
+- !<SceneObject/8309ff21-54ec-4867-8f22-20969c49c014>
+  PrefabRemaps:
+    []
+  Name: RequireMeTest
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ad40a612-e2af-484b-b946-c1991522aa7b
+- !<SceneObject/94284b75-ab36-4537-9169-ab7219bc6458>
+  PrefabRemaps:
+    []
+  Name: Experiments
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d0f39790-9a37-4ba1-9f0a-4d20a020e3a1
+- !<ScriptComponent/ad40a612-e2af-484b-b946-c1991522aa7b>
+  PrefabRemaps:
+    []
+  Name: RequireMe
+  Enabled: true
+  ScriptAsset: !<reference> 704fbbcd-d99c-4043-9764-0552be9327dd
+  ScriptInputsDefault:
+    someNumericInput: true
+    someDefaultInput2: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      someNumericInput: !<float> 0.000000
+      someDefaultInput2: !<float> 10.000000
+  ScriptTypes:
+    "":
+      {}
+- !<RenderMeshVisual/af38c038-46d9-4a9a-8b75-cd45928be75b>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ea2e2cd5-2982-4662-9b1d-e06975891bca
+  Mesh: !<reference> e542623c-1432-4bfa-881d-a28905bd9e57
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ScriptComponent/ce677143-8218-44bd-9a85-df589c3a11ad>
+  PrefabRemaps:
+    []
+  Name: TestRequireMe
+  Enabled: true
+  ScriptAsset: !<reference> 0934d054-faff-4131-85c5-c6d33656ac47
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      objectWithRequireMe: !<reference.SceneObject> 8309ff21-54ec-4867-8f22-20969c49c014
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/d0f39790-9a37-4ba1-9f0a-4d20a020e3a1>
+  PrefabRemaps:
+    []
+  Name: TestPrint
+  Enabled: true
+  ScriptAsset: !<reference> 1bc6d07c-764c-47e8-bcbe-ed0e3f5ab666
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/d1d48298-5dfb-4fb9-9741-b7552ccce164>
+  PrefabRemaps:
+    []
+  Name: Huy
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0955d489-4736-44c6-989b-fec436645689
+    - !<own> 8309ff21-54ec-4867-8f22-20969c49c014
+    - !<own> 1e942fcc-ec64-422e-9943-eb2a64bba79d
+    - !<own> 94284b75-ab36-4537-9169-ab7219bc6458
+  Components:
+    []
+- !<ObjectPrefab/fecface3-de33-422d-98f2-ba7a99e2dc63>
+  PackagePath: ""
+  objects:
+    - !<own> d1d48298-5dfb-4fb9-9741-b7552ccce164
+  LazyLoading: false
+  RetainAssets: true

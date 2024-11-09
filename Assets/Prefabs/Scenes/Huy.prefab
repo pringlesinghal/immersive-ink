@@ -1,0 +1,154 @@
+- !<ObjectPrefab/9a34b5c7-8d3e-4f1f-a904-7456cadbc3df>
+  PackagePath: ""
+  objects:
+    - !<own> 010759b9-5512-4a73-a2e2-d1dc0d1cf471
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/010759b9-5512-4a73-a2e2-d1dc0d1cf471>
+  PrefabRemaps:
+    []
+  Name: Huy
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3e62efb2-77a9-46e4-951a-0c0f9425f198
+    - !<own> ea213e99-48ec-4e9d-93c2-29d3bf595167
+    - !<own> 9ed6cf6e-810d-4e84-b7df-da2b9be00f53
+    - !<own> 34083e3c-e771-4944-9d79-1a5a9d02f98f
+  Components:
+    []
+- !<ScriptComponent/26f2cfa8-fdea-4106-b513-74222f6ec3b9>
+  PrefabRemaps:
+    []
+  Name: TestPrint
+  Enabled: true
+  ScriptAsset: !<reference> 1bc6d07c-764c-47e8-bcbe-ed0e3f5ab666
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<RenderMeshVisual/30efc58b-3066-4507-baaf-3a02fa4d032c>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ea2e2cd5-2982-4662-9b1d-e06975891bca
+  Mesh: !<reference> e542623c-1432-4bfa-881d-a28905bd9e57
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/34083e3c-e771-4944-9d79-1a5a9d02f98f>
+  PrefabRemaps:
+    []
+  Name: Experiments
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 26f2cfa8-fdea-4106-b513-74222f6ec3b9
+- !<ScriptComponent/38c2eb53-8a34-4107-a2e5-ff75055487ed>
+  PrefabRemaps:
+    []
+  Name: TestRequireMe
+  Enabled: true
+  ScriptAsset: !<reference> 0934d054-faff-4131-85c5-c6d33656ac47
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      objectWithRequireMe: !<reference.SceneObject> ea213e99-48ec-4e9d-93c2-29d3bf595167
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/3e62efb2-77a9-46e4-951a-0c0f9425f198>
+  PrefabRemaps:
+    []
+  Name: TestBox
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -13.528814}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 30efc58b-3066-4507-baaf-3a02fa4d032c
+- !<ScriptComponent/6952f11c-897f-4ecb-9b70-09823e1ec926>
+  PrefabRemaps:
+    []
+  Name: RequireMe
+  Enabled: true
+  ScriptAsset: !<reference> 704fbbcd-d99c-4043-9764-0552be9327dd
+  ScriptInputsDefault:
+    someNumericInput: true
+    someDefaultInput2: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      someNumericInput: !<float> 0.000000
+      someDefaultInput2: !<float> 10.000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/9ed6cf6e-810d-4e84-b7df-da2b9be00f53>
+  PrefabRemaps:
+    []
+  Name: TestRequireMePrint
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 38c2eb53-8a34-4107-a2e5-ff75055487ed
+- !<SceneObject/ea213e99-48ec-4e9d-93c2-29d3bf595167>
+  PrefabRemaps:
+    []
+  Name: RequireMeTest
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6952f11c-897f-4ecb-9b70-09823e1ec926
