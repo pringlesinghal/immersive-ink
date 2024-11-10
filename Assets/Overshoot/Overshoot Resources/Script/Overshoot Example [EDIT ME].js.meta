@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/9a18090a-e157-4279-ac99-be3ef8e184d6>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 22405e6c-e8fd-4633-a504-2466354316fa
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 22405e6c-e8fd-4633-a504-2466354316fa
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 7419a6a3-34f0-4144-8f66-0bf1a2c82585
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/1e31e8c3-9bdd-4ea0-9326-f66b0fb6f305>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/7419a6a3-34f0-4144-8f66-0bf1a2c82585>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    amplitude: false
+    decay: false
+    duration: false
+    endValue: false
+    frequency: false
+    screenTransform: false
+    startValue: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - screenTransform: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
+      frequency: !<float> 0.000000
+      amplitude: !<float> 0.000000
+      duration: !<float> 0.000000
+      startValue: !<float> 0.000000
+      endValue: !<float> 0.000000
+      decay: !<float> 0.000000
+  ScriptTypes:
+    -
+      {}

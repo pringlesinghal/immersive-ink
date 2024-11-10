@@ -1,0 +1,187 @@
+- !<Material/c6e2305a-5782-47d8-a31d-3d83671759b6>
+  PackagePath: ""
+  PassesInfo:
+    - !<own> e91efda4-227e-42bc-893d-ee4049f8c589
+- !<PassInfo/e91efda4-227e-42bc-893d-ee4049f8c589>
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    - NODE_13_DROPLIST_ITEM 0
+    - NODE_181_DROPLIST_ITEM 0
+    - NODE_184_DROPLIST_ITEM 0
+    - NODE_221_DROPLIST_ITEM 0
+    - NODE_228_DROPLIST_ITEM 0
+    - NODE_27_DROPLIST_ITEM 0
+    - NODE_315_DROPLIST_ITEM 0
+    - NODE_38_DROPLIST_ITEM 0
+    - NODE_49_DROPLIST_ITEM 0
+    - NODE_69_DROPLIST_ITEM 0
+    - NODE_76_DROPLIST_ITEM 0
+    - Tweak_N121
+  BlendMode: Disabled
+  Properties:
+    Port_Default_N103:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Port_Default_N134:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Port_Default_N173:
+      typeIdx: 4
+      value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Port_Default_N204:
+      typeIdx: 1
+      value: 1.000000
+    Port_Default_N326:
+      typeIdx: 4
+      value: {x: 1.000000, y: 0.999969, z: 0.999985}
+    Port_Default_N369:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Import_N153:
+      typeIdx: 1
+      value: 0.200000
+    Port_Import_N164:
+      typeIdx: 1
+      value: 1.000000
+    Port_Import_N169:
+      typeIdx: 1
+      value: 0.000000
+    Port_Import_N195:
+      typeIdx: 1
+      value: 1.500000
+    Port_Import_N210:
+      typeIdx: 1
+      value: 3.000000
+    Port_Import_N289:
+      typeIdx: 1
+      value: 1.000000
+    Port_Import_N375:
+      typeIdx: 1
+      value: 1.500000
+    Port_Import_N376:
+      typeIdx: 1
+      value: 1.500000
+    Port_Import_N377:
+      typeIdx: 1
+      value: 0.300000
+    Port_Import_N378:
+      typeIdx: 1
+      value: 1.500000
+    Port_Import_N379:
+      typeIdx: 1
+      value: -90.000000
+    Port_Import_N381:
+      typeIdx: 1
+      value: 0.000000
+    Port_Input1_N391:
+      typeIdx: 1
+      value: 5.000000
+    Port_Input1_N392:
+      typeIdx: 1
+      value: 2.100000
+    Port_Input1_N398:
+      typeIdx: 1
+      value: 0.010000
+    Port_Input1_N401:
+      typeIdx: 1
+      value: 4.000000
+    Port_Input2_N072:
+      typeIdx: 1
+      value: 1.000000
+    Port_Multiplier_N302:
+      typeIdx: 1
+      value: 1.000000
+    Port_Scale_N145:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    Port_Scale_N146:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    Port_Scale_N390:
+      typeIdx: 3
+      value: {x: 1.000000, y: 1.000000}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 0.999969, z: 0.999985, w: 1.000000}
+    baseTex:
+      typeIdx: 9
+      value:
+        id: 30eab77b-8118-4264-b64f-463903b0a0d3
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: true
+        type: Texture2D
+    baseTexBorderColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    baseTexDims:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    baseTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    baseTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    materialParamsTex:
+      typeIdx: 9
+      value:
+        id: 8d0ec8b0-8b02-4d50-9f45-170ac6f7f959
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: true
+        type: Texture2D
+    materialParamsTexBorderColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    materialParamsTexDims:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    materialParamsTexTransform:
+      typeIdx: 7
+      value:
+        0: {x: 1.000000, y: 0.000000, z: 0.000000}
+        1: {x: 0.000000, y: 1.000000, z: 0.000000}
+        2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    materialParamsTexUvMinMax:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    metallic:
+      typeIdx: 1
+      value: 1.000000
+    overrideTimeDelta:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeElapsed:
+      typeIdx: 1
+      value: 0.000000
+    overrideTimeEnabled:
+      typeIdx: 0
+      value: 0
+    roughness:
+      typeIdx: 1
+      value: 1.000000
+  Pass: !<reference> 0ef84e78-282b-4019-b716-27726b0a2114

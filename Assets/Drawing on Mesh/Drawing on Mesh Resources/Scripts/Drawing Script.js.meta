@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/60c4e761-5c86-4ac9-a3bb-c1054cb540d0>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 36dfe73c-4076-4f09-8d25-c91844af7ba7
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 36dfe73c-4076-4f09-8d25-c91844af7ba7
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> fe1efdde-fe51-4bce-a132-dff502ce8329
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/7bf68337-9896-47f8-badf-6c5214c8bb1c>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/fe1efdde-fe51-4bce-a132-dff502ce8329>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    DrawingObjects: false
+    camera: false
+    cameraTex: false
+    customizeTexture: false
+    drawingSize: false
+    meshVis: false
+    renderTarget: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      cameraTex: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      renderTarget: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      meshVis: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      DrawingObjects: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      drawingSize: 0.030000
+      customizeTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

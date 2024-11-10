@@ -33,7 +33,7 @@
   DefaultScriptInputs:
     - interactable: !<MappingBased.Interactable> 00000000-0000-0000-0000-000000000000
       publicImage: !<reference.Image> 00000000-0000-0000-0000-000000000000
-      ocrController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      ocrController: !<MappingBased.OCRTypeScript> 00000000-0000-0000-0000-000000000000
       textToObject: !<MappingBased.TextToObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -

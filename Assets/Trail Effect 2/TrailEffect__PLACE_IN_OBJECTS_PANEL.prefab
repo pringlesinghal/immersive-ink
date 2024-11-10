@@ -1,0 +1,364 @@
+- !<ObjectPrefab/05e0b597-eb71-46f0-aafc-6e9fc75a5fa8>
+  PackagePath: ""
+  objects:
+    - !<own> 173fcaac-ef2c-44a4-9594-8a46f181e600
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/02fb1bdd-33dd-4242-81b3-8bf71f20315f>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 2
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 46729029-275a-4f13-b73d-96f5ba618cfc
+  Mesh: !<reference> 34d33787-b43a-4ece-84db-724b48940cd7
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: true
+        roughHarden: 0.500000
+        roughCurve: 2.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/0aa62c95-6af6-49b2-937d-2813e8c2d4c5>
+  PrefabRemaps:
+    []
+  Name: Guide
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 17.795990, y: -45.643269, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 27.725885, y: 27.725897, z: 27.725895}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> fcb6d82f-21f6-4419-ac18-2a8e99720813
+- !<SceneObject/0b7a1080-13f6-4449-8a3b-5f688d7c6e47>
+  PrefabRemaps:
+    []
+  Name: Moving_Empty_Object
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -10.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 3635f60f-5ba7-4820-99ec-6a26b2094fea
+    - !<own> 95abbf67-f38b-47ac-afaf-92bfb14ac3c3
+  Components:
+    - !<own> d915c942-8e71-445d-81c9-99183f6ff0ea
+- !<SceneObject/173fcaac-ef2c-44a4-9594-8a46f181e600>
+  PrefabRemaps:
+    []
+  Name: TrailEffect__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 27aa0d16-a9c1-40f0-ad79-784b9cc1dd0c
+  Components:
+    - !<own> f183a74c-b821-4a00-877f-eeaa712c6400
+- !<SceneObject/27aa0d16-a9c1-40f0-ad79-784b9cc1dd0c>
+  PrefabRemaps:
+    []
+  Name: "moving_object [REPLACE_ME]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -30.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0b7a1080-13f6-4449-8a3b-5f688d7c6e47
+  Components:
+    - !<own> f47d3c75-472a-4909-bd30-830a2aebbf0c
+- !<SceneObject/3635f60f-5ba7-4820-99ec-6a26b2094fea>
+  PrefabRemaps:
+    []
+  Name: Reference Point 1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.025021, y: 0.025021, z: 0.025021}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0aa62c95-6af6-49b2-937d-2813e8c2d4c5
+  Components:
+    - !<own> a04f606a-51a7-4ea2-bfd2-a063975dd131
+- !<SceneObject/95abbf67-f38b-47ac-afaf-92bfb14ac3c3>
+  PrefabRemaps:
+    []
+  Name: Reference Point 2
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 10.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.025021, y: 0.025021, z: 0.025021}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> bbb59504-bf61-43f8-956e-f5e2f3450ac5
+  Components:
+    - !<own> 02fb1bdd-33dd-4242-81b3-8bf71f20315f
+- !<RenderMeshVisual/a04f606a-51a7-4ea2-bfd2-a063975dd131>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 46729029-275a-4f13-b73d-96f5ba618cfc
+  Mesh: !<reference> 34d33787-b43a-4ece-84db-724b48940cd7
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+  RayTracing: !<RayTracingVisualSettings/00000000-0000-0000-0000-000000000000>
+    Reflections:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+      planar:
+        enabled: true
+        roughHarden: 0.500000
+        roughCurve: 2.000000
+    IndirectDiffuse:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    AmbientOcclusion:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Shadows:
+      caster: false
+      receiver: false
+      receiverLayers: 1
+    Material: !<reference> 00000000-0000-0000-0000-000000000000
+    HideFromCamera: false
+- !<SceneObject/bbb59504-bf61-43f8-956e-f5e2f3450ac5>
+  PrefabRemaps:
+    []
+  Name: Guide
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 17.795990, y: 49.280487, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 27.725885, y: 27.725897, z: 27.725895}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c8cb477c-d061-4d61-b43c-dc333e76a6ec
+- !<Text/c8cb477c-d061-4d61-b43c-dc333e76a6ec>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 3
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Left
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: |-
+    Reference
+    Point 2
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 50
+  Font: !<reference> dcc1f0b0-e152-4009-9018-0ab502c6d3d0
+  LayoutRect:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Mode: Solid
+    Color: {x: 0.982605, y: 0.986496, z: 0.999939, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: true
+- !<Animation/d915c942-8e71-445d-81c9-99183f6ff0ea>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  AnimationLayers:
+    Layer0: !<reference> 6d88dfaf-22d6-45aa-a860-012b788ca6cf
+- !<ScriptComponent/f183a74c-b821-4a00-877f-eeaa712c6400>
+  PrefabRemaps:
+    []
+  Name: TrailMeshBuilderController
+  Enabled: true
+  ScriptAsset: !<reference> 8ced02b0-1567-4e59-897a-214032b6d23e
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      trailColor: !<Vec3> {x: 0.095842, y: 0.763714, z: 0.998215}
+      trailLength: !<float> 60.000000
+      trailMaterial: !<reference.Material> e0be5a8b-f6ca-46f8-b6a5-f221983a0f89
+      cursorBase: !<reference.SceneObject> 3635f60f-5ba7-4820-99ec-6a26b2094fea
+      cursor: !<reference.SceneObject> 95abbf67-f38b-47ac-afaf-92bfb14ac3c3
+  ScriptTypes:
+    "":
+      {}
+- !<AnimationMixer/f47d3c75-472a-4909-bd30-830a2aebbf0c>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  Layers:
+    - !<reference> 7b849143-5beb-4dd5-a9ef-a799d4aaeae1
+  Autoplay: true
+  Version: FBX
+- !<Text/fcb6d82f-21f6-4419-ac18-2a8e99720813>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 1
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Left
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: |-
+    Reference
+    Point 1
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 50
+  Font: !<reference> dcc1f0b0-e152-4009-9018-0ab502c6d3d0
+  LayoutRect:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Mode: Solid
+    Color: {x: 0.982605, y: 0.986496, z: 0.999939, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: true
