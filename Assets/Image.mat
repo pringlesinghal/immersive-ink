@@ -1,8 +1,16 @@
+<<<<<<< LOCAL
 - !<Material/53bea75f-45ef-434a-b428-aef444f83674>
   PackagePath: ""
   PassesInfo:
     - !<own> d659688c-746e-44e1-bc18-f822c18f62bd
 - !<PassInfo/d659688c-746e-44e1-bc18-f822c18f62bd>
+=======
+- !<Material/810c8747-2f1c-44ed-8eeb-8ad501096591>
+  PackagePath: ""
+  PassesInfo:
+    - !<own> 9b3bc13c-b214-4585-99fd-277e2c224ed3
+- !<PassInfo/9b3bc13c-b214-4585-99fd-277e2c224ed3>
+>>>>>>> REMOTE
   DepthWrite: false
   DepthTest: false
   DepthFunction: LessEqual
@@ -33,7 +41,11 @@
     baseTex:
       typeIdx: 9
       value:
+<<<<<<< LOCAL
         id: 6b160726-07ac-49f0-bcd3-b61f363ae49e
+=======
+        id: 62d4390a-e1c7-4951-97da-8f2f3e6ce085
+>>>>>>> REMOTE
         sampler:
           filteringMode: Trilinear
           wrapModeU: ClampToEdge
@@ -42,6 +54,7 @@
           borderColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
           mipmaps: false
         type: Texture2D
+<<<<<<< LOCAL
     baseTexBorderColor:
       typeIdx: 5
       value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
@@ -67,3 +80,6 @@
       typeIdx: 0
       value: 0
   Pass: !<reference> 930759b1-a961-499e-9ffb-6273bb65bffd
+=======
+  Pass: !<reference> 45702a26-7b13-4ac1-a460-8a9ff70c8ef8
+>>>>>>> REMOTE

@@ -1,0 +1,69 @@
+- !<ObjectPrefab/b31fd053-c949-4f76-be19-45cdb62f716f>
+  PackagePath: ""
+  objects:
+    - !<own> ee463451-a731-4045-a42d-50db0a39bdcd
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/97c9d4f0-35fe-4e4e-b1e8-fef09b783ed7>
+  PrefabRemaps:
+    []
+  Name: "UsageExample [EDIT EVENT]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f66217f1-4087-423b-b7e1-19791daa31a1
+- !<ScriptComponent/9b32ca03-b8b7-430a-9e5c-644fd606c49f>
+  PrefabRemaps:
+    []
+  Name: InstanceSound
+  Enabled: true
+  ScriptAsset: !<reference> 5da963dc-6fa6-4521-a736-439e0d941da0
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/ee463451-a731-4045-a42d-50db0a39bdcd>
+  PrefabRemaps:
+    []
+  Name: InstanceSound__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 97c9d4f0-35fe-4e4e-b1e8-fef09b783ed7
+  Components:
+    - !<own> 9b32ca03-b8b7-430a-9e5c-644fd606c49f
+- !<ScriptComponent/f66217f1-4087-423b-b7e1-19791daa31a1>
+  PrefabRemaps:
+    []
+  Name: Example Usage_TouchStartEvent
+  Enabled: true
+  ScriptAsset: !<reference> 6b6276cf-1267-4bf8-8716-73f1c7a7d3be
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      instanceSoundScript: !<reference.ScriptComponent> 9b32ca03-b8b7-430a-9e5c-644fd606c49f
+      audioTrack: !<reference.AudioTrackAsset> fdb21dfd-4f5c-4a23-8cd3-cc09828588fa
+  ScriptTypes:
+    "":
+      {}

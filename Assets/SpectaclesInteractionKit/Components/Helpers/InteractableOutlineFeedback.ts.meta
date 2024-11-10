@@ -32,7 +32,7 @@
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
-    - targetOutlineMaterial: !<reference.Material> 7ac80b6c-979a-4a00-a694-099f296be161
+    - targetOutlineMaterial: !<reference.Material> 8abfda8f-2648-4593-9f44-3b1c0e51762f
       hoveringColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 0.040000, w: 1.000000}
       activatingColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       outlineWeight: -0.250000

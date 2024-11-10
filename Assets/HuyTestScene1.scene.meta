@@ -1,0 +1,14 @@
+- !<AssetImportMetadata/5d807c64-58c1-45c4-819b-18a1a2d71644>
+  ImportedAssetIds:
+    Scene: !<reference> 69f11869-58a2-4237-9ffb-d06b0b85c792
+  ImporterName: SceneImporter
+  PrimaryAsset: !<reference> 69f11869-58a2-4237-9ffb-d06b0b85c792
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/6ac8f9de-a7b1-4b0f-8f2c-3431bd9e98bd>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
