@@ -32,6 +32,8 @@ export class TextToObject extends BaseScriptComponent {
   private globalDelay: Array<number> = [30, 5, 5, 5, 30, 30, 5];
   private globalDelayCounter: number = 0;
 
+  private cachedSceneObject: SceneObject
+
   onAwake = () => {
     print("Code started");
     // this.createEvent("TapEvent").bind(this.triggerOnTap);
@@ -51,6 +53,7 @@ export class TextToObject extends BaseScriptComponent {
     print("Trigger start");
 
     let glb_url: string = "";
+    let glb_url_preview: string = "";
 
     if (!this.testing) {
       this.startCreateTask = new Date().getTime();
@@ -62,11 +65,13 @@ export class TextToObject extends BaseScriptComponent {
       }
       
       this.startPollOne = new Date().getTime();
-      const poll_preview_task = await this.pollForAssetUrl(preview_task_id);
-      if (!poll_preview_task) {
+      const glb_url_preview = await this.pollForAssetUrl(preview_task_id);
+      if (!glb_url_preview) {
         print("Polling mechanism failed");
         return;
       }
+
+      await this.downloadAsset(glb_url_preview);
 
       this.startRefine = new Date().getTime();
       // Step 2: Create the refined object task
@@ -191,7 +196,7 @@ export class TextToObject extends BaseScriptComponent {
         if (response.statusCode === 200) {
           const responseBody = JSON.parse(response.body);
           if (responseBody.status === "SUCCEEDED") {
-            this.endPollTwo = new Date().getTime() - this.endPollOne;
+            this.endPollTwo = new Date().getTime() - this.startPollTwo;
             print("Get Asset URL time elapsed: " + this.endPollTwo);
 
             const glb_url = responseBody["model_urls"]["glb"];
@@ -225,7 +230,12 @@ export class TextToObject extends BaseScriptComponent {
           (glTFAsset) => {
             print('Asset loaded successfully');
             print(glTFAsset.name);
-            glTFAsset.tryInstantiate(this.meshParent, this.pbrMaterialHolder);
+
+            if (this.cachedSceneObject) {
+                this.cachedSceneObject.enabled = false;
+            }
+
+            this.cachedSceneObject = glTFAsset.tryInstantiate(this.meshParent, this.pbrMaterialHolder);
           },
           (error) => {
             print('Error loading asset: ' + error);

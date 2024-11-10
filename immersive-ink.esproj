@@ -4,17 +4,17 @@ studioVersion:
   patch: 1
   build: 24092500
 updateCheckpoint: 48
-sceneId: bb5f7503-8a68-43ea-b79d-6a13e11fa193
+sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
 viewConfig:
   simulation:
-    device: No Simulation
-    cameraFov: 66.519997
-    fullFrameAspect: nan
-    viewport: Maximized
+    device: Spectacles (2024)
+    cameraFov: nan
+    fullFrameAspect: 0.666660
+    viewport: Normal
     output: Live
     stereoOutputEye: Center
-    deviceTypeOverride: Spectacles
-  cameraType: Back
+    deviceTypeOverride: Unknown
+  cameraType: Front
 metaInfo:
   hints:
     []

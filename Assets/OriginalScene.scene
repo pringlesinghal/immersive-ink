@@ -12,6 +12,8 @@
     - !<own> 24db54f6-5437-4e05-980d-f30c03b8c3a5
     - !<own> cc0a057b-fd75-4f9a-9cc5-d279ca8637d9
     - !<own> 65eab767-cb85-4019-b36e-1cb826cd6c89
+    - !<own> 12abfb14-63ed-4535-a66e-bd3c6d2aff0f
+    - !<own> e6b3a885-5da6-4139-b39f-c085510cd5d6
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -1141,6 +1143,21 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/12abfb14-63ed-4535-a66e-bd3c6d2aff0f>
+  PrefabRemaps:
+    []
+  Name: TextToObject
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -20.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7ccdc481-bb71-4a5f-9dd3-6ed4da89ae81
 - !<SceneObject/13cc0437-ebd1-4bb9-baf3-cea8c4384a93>
   PrefabRemaps:
     []
@@ -7887,6 +7904,24 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<ScriptComponent/7ccdc481-bb71-4a5f-9dd3-6ed4da89ae81>
+  PrefabRemaps:
+    []
+  Name: TextToObject
+  Enabled: true
+  ScriptAsset: !<reference> 1becc9f0-1e46-4ad7-afe0-568b09ba4480
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      remoteServiceModule: !<reference.RemoteServiceModule> acccd408-c3a8-4fab-8ed9-1a9428b13a40
+      pbrMaterialHolder: !<reference.Material> 26eec68d-8a82-4d62-a4ec-3d5d72b2339b
+      meshParent: !<reference.SceneObject> e6b3a885-5da6-4139-b39f-c085510cd5d6
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/7cfba84e-6ef3-4b6f-833b-57850c31f5f2>
   PrefabRemaps:
     []
@@ -9710,7 +9745,7 @@
       ocrController: !<MappingBased.OCRTypeScript> 544edd48-9cee-4414-9a86-128fc5c83aac
       interactable: !<MappingBased.Interactable> 2f05197d-a20a-43e1-868b-dda03b364610
       publicImage: !<reference.Image> edbaaf61-c466-4597-a0f6-552a5a824218
-      textToObject: !<MappingBased.TextToObject> 947f2323-a55e-4486-9d81-b99d76efb995
+      textToObject: !<MappingBased.TextToObject> 7ccdc481-bb71-4a5f-9dd3-6ed4da89ae81
   ScriptTypes:
     "":
       {}
@@ -10639,7 +10674,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 5.000000, y: 0.000000, z: -60.000000}
+    position: {x: 7.500000, y: 0.000000, z: -80.000000}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.250000, y: 1.250000, z: 1.250000}
     hasSegmentScaleCompensation: false
@@ -12734,6 +12769,21 @@
     - !<own> 6782f3ef-7209-498a-bd1f-faa1b9c8259e
   Components:
     - !<own> 4e9e9b21-f4d8-45d4-b679-f13bfca2a719
+- !<SceneObject/e6b3a885-5da6-4139-b39f-c085510cd5d6>
+  PrefabRemaps:
+    []
+  Name: ParentGenAIHolder
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -20.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
 - !<SceneObject/e743c9bb-f45d-40d6-b7b0-40f7af3a9e18>
   PrefabRemaps:
     []

@@ -1,6 +1,7 @@
 import { TextToObject } from 'Scripts/TextToObject';
 import { Interactable } from '../../SpectaclesInteractionKit/Components/Interaction/Interactable/Interactable';
 import { OCRTypeScript } from 'Scripts/OCRTypeScript';
+import { setTimeout } from "SpectaclesInteractionKit/Utils/debounce";
 
 @component
 export class ClickOnButtonTest extends BaseScriptComponent {
@@ -21,10 +22,20 @@ export class ClickOnButtonTest extends BaseScriptComponent {
 
     @input
     textToObject: TextToObject
+
+    // private renderTarget = require("LensStudio:RenderTarget") as any;
+
+    startTracking: Boolean = true;
+
+    /*
+    @input
+    testMaterial: Material
+    */
     
     onAwake() {
         print("Hello world.");
         print("Checking for OCR Controller.");
+        print("Huy test");
 
         this.testCameraFrame();
 
@@ -35,12 +46,70 @@ export class ClickOnButtonTest extends BaseScriptComponent {
             return;
         }
         */
+
+        // this.testCameraEachFrame();
+        // this.delayTestCamera();
+        this.testCameraEachFrame();
+    }
+
+    delay = async (ms: number) => {
+        return new Promise(resolve => setTimeout(() => {resolve(true)}, ms));
+    };
+
+    async testCameraEachFrame() {
+        while(this.startTracking) {
+            await this.delay(100);
+
+            //@ts-ignore
+            let cameraRequest = CameraModule.createCameraRequest();
+            // print("Success1");
+            //@ts-ignore
+            cameraRequest.id = CameraModule.CameraId.Left_Color;
+
+            let cameraTexture = this.cameraModule.requestCamera(cameraRequest);
+            const provider = cameraTexture.control as CameraTextureProvider
+
+            //@ts-ignore
+            let eventRegistration = provider.onNewFrame.add(() => {
+                //@ts-ignore
+                // provider.onNewFrame.remove(eventRegistration)
+
+                // const width = cameraTexture.getWidth() // 1008
+                // const height = cameraTexture.getHeight() // 756
+                const readableTexture = ProceduralTextureProvider.createFromTexture(cameraTexture)
+                // const readableProvider = readableTexture.control as ProceduralTextureProvider
+                // const data = new Uint8Array(width * height * 4)
+                // readableProvider.getPixels(0, 0, width, height, data)
+
+                // this.encodeImage(data, width, height)
+
+                const imageComponent = this.publicImage
+                imageComponent.enabled = true
+                imageComponent.mainPass.baseTex = readableTexture
+            })
+
+            //@ts-ignore
+            const stop = provider.onNewFrame.add(() => {
+                //@ts-ignore
+                provider.onNewFrame.remove(eventRegistration);
+            })
+        }
+    }
+
+    async restoreUpdateTracking() {
+        print("Restoring update tracking...");
+        await this.delay(5000);
+        this.startTracking = true;
+        this.testCameraEachFrame();
+        print("Restored start tracking -> true.")
     }
     
     testCameraFrame() {
 
         this.interactable.onTriggerEnd.add(() => {
             try {
+                this.startTracking = false;
+
                 print("Test hello world on click button1.");
                 print("Trying to request Camera Access");
         
@@ -70,6 +139,7 @@ export class ClickOnButtonTest extends BaseScriptComponent {
                     const readableProvider = readableTexture.control as ProceduralTextureProvider
                     const data = new Uint8Array(width * height * 4)
                     readableProvider.getPixels(0, 0, width, height, data)
+
                     this.encodeImage(data, width, height)
 
                     const imageComponent = this.publicImage
@@ -81,6 +151,36 @@ export class ClickOnButtonTest extends BaseScriptComponent {
                         print('hello')
                         return;
                     }
+
+                    var zoomFactor = 1.5
+                    var offsetX = 0.2
+                    var offsetY = 0.1
+
+                    // Create a Render Target
+                    /*
+                    let renderTarget = new RenderTarget({
+                        width: readableTexture.getWidth(),
+                        height: readableTexture.getHeight()
+                    });
+                    */
+                   /*
+                    var renderTarget = this.renderTarget.create();
+
+                    // Create Material for Texture manipulation
+                    this.testMaterial.mainTexture = readableTexture;
+
+                    // Zoom by scaling UVs
+                    material.mainTextureScale = new vec2(zoomFactor, zoomFactor); // Set desired zoom factor
+
+                    // Shift by offsetting UVs
+                    material.mainTextureOffset = new vec2(offsetX, offsetY); // Set desired offset
+
+                    // Apply material to render target
+                    renderTarget.material = material;
+
+                    // Capture to new texture
+                    let newTexture = renderTarget.render();
+                    */
 
                     // set input texture to process
                     // for example device texture or an image picker texture
@@ -123,6 +223,8 @@ export class ClickOnButtonTest extends BaseScriptComponent {
 
                                 // Create the model
                                 this.textToObject.triggerOnTap(mainAnswer);
+
+                                this.restoreUpdateTracking();
                             } else {
                                 print(JSON.stringify(response));
                             }

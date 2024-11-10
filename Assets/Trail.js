@@ -28,7 +28,7 @@ script.createEvent("UpdateEvent").bind(()=>{
       pos2.z, //0
     ]);
     builder.appendIndices([0, 1]);
-    print("shkfkdsdsfkh")
+    // print("shkfkdsdsfkh")
     meshVisual.mesh = builder.getMesh();
     meshVisual.mainMaterial = script.mat;
     builder.updateMesh();
