@@ -13,6 +13,7 @@
     - !<own> 65eab767-cb85-4019-b36e-1cb826cd6c89
     - !<own> 12abfb14-63ed-4535-a66e-bd3c6d2aff0f
     - !<own> e6b3a885-5da6-4139-b39f-c085510cd5d6
+    - !<own> 3299b499-509a-4aa8-9863-e459525f9bce
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -420,6 +421,23 @@
   ScriptTypes:
     "":
       {}
+- !<AudioComponent/06d73d28-0e26-4777-a43d-aa3c72932513>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 23e1467b-5e0a-4762-84fd-758df7013ccd
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<RenderMeshVisual/07e86edd-0e7a-4dd1-b70d-95f8c056248a>
   PrefabRemaps:
     []
@@ -780,6 +798,21 @@
   Components:
     - !<own> 6121afc0-1b2a-4225-ae7e-ec43e2187226
     - !<own> 0106f538-c597-4b6c-858e-d02d6c55ed1f
+- !<SceneObject/10175135-09fa-45ac-af22-d718285b5f83>
+  PrefabRemaps:
+    []
+  Name: DolphinPlayer
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 06d73d28-0e26-4777-a43d-aa3c72932513
 - !<Skin/1033a248-c85a-41d6-8395-d6ee6abf289a>
   PrefabRemaps:
     []
@@ -1329,6 +1362,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/1a91e63a-a46a-4c9b-9b05-8e3986da3d7a>
+  PrefabRemaps:
+    []
+  Name: OctopusPlayer
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ad2cee3e-c0f7-4952-813b-120054989b35
 - !<Text/1b6bc2be-4ce2-4e78-81f4-80948f1ddc2e>
   PrefabRemaps:
     []
@@ -2026,6 +2074,21 @@
     bottom: -1.000000
     right: 1.000000
     top: 1.000000
+- !<SceneObject/250ef9cb-ecc2-470d-98e9-c78c7f6040dd>
+  PrefabRemaps:
+    []
+  Name: SeaTurtleScript
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 32fa7e05-544e-4fc5-a8ae-5be4feee57e2
 - !<ScriptComponent/258098c4-b160-4dfa-af8a-0f59ee739064>
   PrefabRemaps:
     []
@@ -2869,6 +2932,22 @@
   Components:
     - !<own> 3467eb3a-eedc-43de-80d3-393de148ecb3
     - !<own> e9549b7c-a276-43df-a92c-32489c7689a4
+- !<ScriptComponent/2be2e0de-9d42-4fac-bbfb-c10577b0f82c>
+  PrefabRemaps:
+    []
+  Name: DolphinScript
+  Enabled: true
+  ScriptAsset: !<reference> b12d6d1c-07c5-4161-8328-2d22f31d5493
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      audioComponent: !<reference.AudioComponent> 06d73d28-0e26-4777-a43d-aa3c72932513
+  ScriptTypes:
+    "":
+      {}
 - !<Text/2c10ed34-341d-44e5-8672-4de5c33a1054>
   PrefabRemaps:
     []
@@ -2956,6 +3035,23 @@
   BodySettingValue: 1.000000
   Damping: 0.000000
   AngularDamping: 0.000000
+- !<AudioComponent/2cd933f0-d990-4cce-8541-faedd7d45ae5>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 4048ab85-f3f2-4ed8-87c7-afe4975e7305
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<ScriptComponent/2de026ef-8d48-4d32-9a2a-b7b3a1f6b5aa>
   PrefabRemaps:
     []
@@ -3863,6 +3959,48 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/3299b499-509a-4aa8-9863-e459525f9bce>
+  PrefabRemaps:
+    []
+  Name: AudioPlayback
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -20.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 10175135-09fa-45ac-af22-d718285b5f83
+    - !<own> 6f7b58c9-a159-423d-b15b-0a06385289d1
+    - !<own> 34b20ccc-0c76-4a5e-985f-711feb8b6ee5
+    - !<own> c8e8a91a-889b-4bf6-99e8-370f172ac1d0
+    - !<own> 1a91e63a-a46a-4c9b-9b05-8e3986da3d7a
+    - !<own> 9fe89dd2-741e-4084-a553-8e0954ffb5ec
+    - !<own> 7fb31ea6-ed71-4a61-a906-2adc8bfebdae
+    - !<own> 50da4d0b-cb7e-4956-922b-1bd90d612d24
+    - !<own> b4e55fc6-c56c-4f93-b2ab-0b7f683a7820
+    - !<own> 5ed9709e-e78e-441f-8c57-a3dee599f084
+    - !<own> 7fa4e704-d615-41b8-ae49-5d117a0ee4c4
+    - !<own> 250ef9cb-ecc2-470d-98e9-c78c7f6040dd
+  Components:
+    []
+- !<ScriptComponent/32fa7e05-544e-4fc5-a8ae-5be4feee57e2>
+  PrefabRemaps:
+    []
+  Name: SeaTurtleScript
+  Enabled: true
+  ScriptAsset: !<reference> 3371cbd0-64be-42dd-9767-f862698cd0b2
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      audioComponent: !<reference.AudioComponent> ae765944-131e-40e8-b8da-8c9766500b21
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/33735641-6061-4c01-a86c-362dca42fe6d>
   PrefabRemaps:
     []
@@ -3944,6 +4082,21 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/34b20ccc-0c76-4a5e-985f-711feb8b6ee5>
+  PrefabRemaps:
+    []
+  Name: AsianElephantPlayer
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7d2dc23e-f0d6-49f9-ad9c-4a1a7e1b31fb
 - !<ScriptComponent/34c3a114-1d95-411f-be91-c7feb514f57d>
   PrefabRemaps:
     []
@@ -4410,6 +4563,22 @@
       customFunctionForOnButtonPinched: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       onButtonPinchedFunctionNames: !<string[]>
         []
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/4161786a-9d21-4cf9-b13f-27590947eadc>
+  PrefabRemaps:
+    []
+  Name: MonarchButterflyScript
+  Enabled: true
+  ScriptAsset: !<reference> 811df73e-4291-4682-a512-ed0607018629
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      audioComponent: !<reference.AudioComponent> 683c257c-2360-4d09-97ff-b46582b78ebd
   ScriptTypes:
     "":
       {}
@@ -5044,6 +5213,21 @@
     - !<own> be24bd1d-2398-4c43-b15a-b95da3154b68
   Components:
     []
+- !<SceneObject/50da4d0b-cb7e-4956-922b-1bd90d612d24>
+  PrefabRemaps:
+    []
+  Name: BlackRhinoScript
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 64c100f9-e30f-4db8-b231-740f7da36ee4
 - !<AudioComponent/51747312-db7f-4784-b3d1-99b6ede50f6b>
   PrefabRemaps:
     []
@@ -6155,6 +6339,21 @@
     - !<own> bbe1ba5d-e7ef-4d56-bfaf-9e0cbc0cb15d
   Components:
     []
+- !<SceneObject/5ed9709e-e78e-441f-8c57-a3dee599f084>
+  PrefabRemaps:
+    []
+  Name: MonarchButterflyScript
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 2.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.100000, y: 0.100000, z: 0.100000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4161786a-9d21-4cf9-b13f-27590947eadc
 - !<ScreenTransform/60138fa9-9b3f-4175-89e8-e1fc9787ca83>
   PrefabRemaps:
     []
@@ -6300,6 +6499,22 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/64c100f9-e30f-4db8-b231-740f7da36ee4>
+  PrefabRemaps:
+    []
+  Name: BlackRhinoScript
+  Enabled: true
+  ScriptAsset: !<reference> 0a0f3f90-e0bc-4af4-a053-721856270a3b
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      audioComponent: !<reference.AudioComponent> 2cd933f0-d990-4cce-8541-faedd7d45ae5
   ScriptTypes:
     "":
       {}
@@ -6456,6 +6671,23 @@
   ScriptTypes:
     "":
       {}
+- !<AudioComponent/683c257c-2360-4d09-97ff-b46582b78ebd>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 75a54cfb-2d54-4fde-a5c3-703b5f59a604
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<ScriptComponent/68b0a954-079b-458a-8173-e5bdf04c8a6d>
   PrefabRemaps:
     []
@@ -6838,6 +7070,21 @@
     - !<own> 554d9c2f-c649-459d-bc0f-9a743585e9b1
     - !<own> 3cba40a3-2b39-456d-8214-fd149f0413c4
     - !<own> d9dee978-2ec4-4273-9af8-afc9cb686378
+- !<SceneObject/6f7b58c9-a159-423d-b15b-0a06385289d1>
+  PrefabRemaps:
+    []
+  Name: BlackRhinoPlayer
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2cd933f0-d990-4cce-8541-faedd7d45ae5
 - !<SceneObject/6f9260d3-d992-40c7-89de-80d036888b13>
   PrefabRemaps:
     []
@@ -7368,6 +7615,23 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<AudioComponent/7d2dc23e-f0d6-49f9-ad9c-4a1a7e1b31fb>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 1dc38a70-3c0a-4e47-adf7-a7f3c1843857
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<SceneObject/7d6ae339-177b-4e14-bf6b-ca73b8a6f5bb>
   PrefabRemaps:
     []
@@ -7509,6 +7773,36 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/7fa4e704-d615-41b8-ae49-5d117a0ee4c4>
+  PrefabRemaps:
+    []
+  Name: OctopusScript
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 2.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.100000, y: 0.100000, z: 0.100000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ed453211-f383-4598-89ab-f7c39d1635c2
+- !<SceneObject/7fb31ea6-ed71-4a61-a906-2adc8bfebdae>
+  PrefabRemaps:
+    []
+  Name: DolphinScript
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2be2e0de-9d42-4fac-bbfb-c10577b0f82c
 - !<ScreenTransform/7fcc16dc-6c85-4188-bcd2-1385c40c860c>
   PrefabRemaps:
     []
@@ -8925,6 +9219,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/9fe89dd2-741e-4084-a553-8e0954ffb5ec>
+  PrefabRemaps:
+    []
+  Name: SeaTurtlePlayer
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ae765944-131e-40e8-b8da-8c9766500b21
 - !<SceneObject/a0554e71-ba6e-4d74-a8cb-42db84d22338>
   PrefabRemaps:
     []
@@ -9567,6 +9876,40 @@
     - !<own> 6c704b78-614a-45c5-a771-19add4fe9ec2
   Components:
     []
+- !<AudioComponent/ad2cee3e-c0f7-4952-813b-120054989b35>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 0e050203-61d0-4514-942b-25a8d534ac5f
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<AudioComponent/ae765944-131e-40e8-b8da-8c9766500b21>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> d62a0ae7-dcab-419f-afdb-aa481a1a08d7
+  EnableAutoplayLoop: false
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<ScriptComponent/ae777e43-7f9e-4188-ab5f-59a7083f880d>
   PrefabRemaps:
     []
@@ -9773,6 +10116,21 @@
   FlipX: false
   FlipY: false
   Pivot: {x: 0.000000, y: 0.000000}
+- !<SceneObject/b4e55fc6-c56c-4f93-b2ab-0b7f683a7820>
+  PrefabRemaps:
+    []
+  Name: AsianElephantScript
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> db0cbcf3-b752-4f8e-baf8-fa3d64486e55
 - !<ScriptComponent/b5210e45-33b2-4757-8cce-ec01c2bec9aa>
   PrefabRemaps:
     []
@@ -11271,6 +11629,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/c8e8a91a-889b-4bf6-99e8-370f172ac1d0>
+  PrefabRemaps:
+    []
+  Name: MonarchButterflyPlayer
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 683c257c-2360-4d09-97ff-b46582b78ebd
 - !<ScreenTransform/c8e98760-769e-498b-bd72-b9e23734bd36>
   PrefabRemaps:
     []
@@ -12074,6 +12447,22 @@
       outlineWeight: -0.250000
       meshVisuals: !<reference.RenderMeshVisual[]>
         - !<reference> 2a30125f-13fc-4b98-b43f-cdf599c2ede0
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/db0cbcf3-b752-4f8e-baf8-fa3d64486e55>
+  PrefabRemaps:
+    []
+  Name: AsianElephantScript
+  Enabled: true
+  ScriptAsset: !<reference> ea8809df-0cc9-4aef-976c-e07eb53e1a96
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      audioComponent: !<reference.AudioComponent> 7d2dc23e-f0d6-49f9-ad9c-4a1a7e1b31fb
   ScriptTypes:
     "":
       {}
@@ -13008,6 +13397,22 @@
     - !<own> 5ec4fd6f-5b36-4c34-9962-9c302e97d838
   Components:
     []
+- !<ScriptComponent/ed453211-f383-4598-89ab-f7c39d1635c2>
+  PrefabRemaps:
+    []
+  Name: OctopusScript
+  Enabled: true
+  ScriptAsset: !<reference> fd835663-e65e-4877-83b2-cdb16bfe5973
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      audioComponent: !<reference.AudioComponent> ad2cee3e-c0f7-4952-813b-120054989b35
+  ScriptTypes:
+    "":
+      {}
 - !<Image/edbaaf61-c466-4597-a0f6-552a5a824218>
   PrefabRemaps:
     []
