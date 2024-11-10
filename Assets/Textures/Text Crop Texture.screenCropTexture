@@ -1,0 +1,9 @@
+- !<ScreenCropTexture/6a26808b-7c58-4765-a883-1d396e0b1e27>
+  PackagePath: ""
+  InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Cropping:
+    left: -1.000000
+    bottom: -1.000000
+    right: 1.000000
+    top: 1.000000
+  Rotation: 0.000000

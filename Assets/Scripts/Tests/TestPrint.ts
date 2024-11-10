@@ -7,7 +7,7 @@ export class TestPrint extends BaseScriptComponent {
     // interactable: Interactable;
     
     onAwake() {
-        print("Hello world test.");
+        print("Heello world test.");
     }
     
     testFunction() {

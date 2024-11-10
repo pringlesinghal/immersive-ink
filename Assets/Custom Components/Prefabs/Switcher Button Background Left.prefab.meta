@@ -1,0 +1,92 @@
+- !<AssetImportMetadata/f401bb42-d138-44fd-8a5d-d1c5ec9b2be5>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 1d88d988-a6c2-4c51-867e-d0576a1f8806
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 1d88d988-a6c2-4c51-867e-d0576a1f8806
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 47ba3329-2496-4d14-9824-ba8cb00bc92f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/a8e4d2b1-e354-4199-98d6-10803e48b99a>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScreenTransform/07ddfaa0-4697-4cdb-b8a6-b0fb905e3c0b>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: -1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1.000000
+    bottom: -1.000000
+    right: 1.000000
+    top: 1.000000
+  Offset:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
+- !<Image/39ac171b-098d-4305-842f-cf67776654d3>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 78295bab-04c0-406f-83e5-313eef1d07c3
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+- !<ObjectPrefabAssetData/47ba3329-2496-4d14-9824-ba8cb00bc92f>
+  SourceRemaps:
+    - 758c7e41-035f-4238-b9eb-59eaacd16597: e52b449c-3193-4e24-9c4c-0439ca59bf3d
+    - 9fc81868-91eb-4277-85d1-0b77f0a1511b: 39ac171b-098d-4305-842f-cf67776654d3
+    - a64a2b37-eea3-45a8-bec2-a177cdcb2155: 07ddfaa0-4697-4cdb-b8a6-b0fb905e3c0b
+  SourceState: !<own> d01bedc6-abd8-4e7e-bef2-ac150bbe993d
+- !<ObjectPrefab/d01bedc6-abd8-4e7e-bef2-ac150bbe993d>
+  PackagePath: ""
+  objects:
+    - !<own> e52b449c-3193-4e24-9c4c-0439ca59bf3d
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/e52b449c-3193-4e24-9c4c-0439ca59bf3d>
+  PrefabRemaps:
+    []
+  Name: Switcher Button Background
+  Enabled: true
+  Layers: 2
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 07ddfaa0-4697-4cdb-b8a6-b0fb905e3c0b
+    - !<own> 39ac171b-098d-4305-842f-cf67776654d3

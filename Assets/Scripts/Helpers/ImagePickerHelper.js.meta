@@ -1,0 +1,38 @@
+- !<AssetImportMetadata/a0925610-739e-4fa9-984a-865972f01053>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> d428526e-0a8d-43fb-8fb6-3e31059e9d9a
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> d428526e-0a8d-43fb-8fb6-3e31059e9d9a
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> a86777b8-e966-4baa-b462-fc63f103e740
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/c95ec2d1-2474-444c-bad2-4eca5b278d7a>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/a86777b8-e966-4baa-b462-fc63f103e740>
+  SvgIcon: ""
+  Description: |
+    Allows to add offset to screen transform so it's bottom edge is above picker used to avoid covering ui elements with image picker expects global events called "showImagePickerEvent" and "hideImagePickerEvent"
+
+  InternalVersion: 1
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    bottomOffset: false
+    screenTransform: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - screenTransform: !<reference.ScreenTransform> 00000000-0000-0000-0000-000000000000
+      bottomOffset: !<float> 0.000000
+  ScriptTypes:
+    -
+      {}

@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/1b43d992-18a5-4420-832a-351cb9775690>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 401e67ea-0880-4ad7-b961-e01ed6142463
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 401e67ea-0880-4ad7-b961-e01ed6142463
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> e274b3e9-d31f-40b5-acf5-8af439891b2e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/bfe834d2-1e1c-40fa-bdea-6807ad5f0fa1>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/e274b3e9-d31f-40b5-acf5-8af439891b2e>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    cursor: false
+    cursorBase: false
+    trailColor: false
+    trailLength: false
+    trailMaterial: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - trailColor: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      trailLength: !<float> 30.000000
+      trailMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      cursorBase: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cursor: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

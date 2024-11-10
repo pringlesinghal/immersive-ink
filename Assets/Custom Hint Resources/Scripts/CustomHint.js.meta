@@ -1,0 +1,55 @@
+- !<AssetImportMetadata/23f8c7ae-c025-4a60-a428-f95951e091ed>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 26398756-d75f-4cd6-a037-5605e81080d2
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 26398756-d75f-4cd6-a037-5605e81080d2
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 354c3913-75a7-40db-ab00-e674fcb36199
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/f05caea1-22f3-4bff-b89a-4f1bb851b771>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/354c3913-75a7-40db-ab00-e674fcb36199>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 1
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    advanced: false
+    appearDelay: false
+    appearDuration: false
+    camera: false
+    disableHiding: false
+    disappearDuration: false
+    hideIfCapture: false
+    hideOnCamSwitch: false
+    hintObjects: false
+    showOnce: false
+    stayDuration: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - hintObjects: !<reference.SceneObject[]>
+        []
+      camera: 0
+      appearDelay: !<float> 0.000000
+      appearDuration: 0.800000
+      stayDuration: !<float> 2.000000
+      disappearDuration: 0.800000
+      advanced: false
+      disableHiding: false
+      showOnce: true
+      hideIfCapture: true
+      hideOnCamSwitch: true
+  ScriptTypes:
+    -
+      {}

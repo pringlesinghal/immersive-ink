@@ -331,7 +331,7 @@
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
-    - triggeringEventType: TouchEvent
+    - triggeringEventType: TurnOnEvent
       touchEventEventType: TapEvent
       touchEventTouchTarget: !<reference.BaseMeshVisual> 00000000-0000-0000-0000-000000000000
       faceEventEventType: MouthOpenedEvent

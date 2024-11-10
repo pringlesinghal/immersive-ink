@@ -1,0 +1,69 @@
+- !<AssetImportMetadata/303a397e-1e10-4fe3-83bc-e9c97631e61c>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> e79146c9-bd07-42f2-bbd7-9edd0c9fd510
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> e79146c9-bd07-42f2-bbd7-9edd0c9fd510
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 05572268-7541-4909-a506-d46d6b190f1c
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/15947859-4cc3-48dc-afea-b9f8c57d8742>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/05572268-7541-4909-a506-d46d6b190f1c>
+  SvgIcon: ""
+  Description: |-
+    Description: Controls Character Detection and Recognition ML models and provides api to recognize text on the input texture
+    Public api:
+    
+    Runs detector ml model immediately
+    returns array of detected boxes 
+    script.getDetectionBoxes()
+    Get text on an input texture in the provided rectangles
+    Returns list of text labels
+    script.getDetectedText(rects)
+    Set Input Texture for processing
+    script.setInputTexture(texture)
+    Get Input Texture that is being processed
+    script.getInputTexture
+    Whether ml component are ready to process data
+    script.isInitialized()
+  InternalVersion: 1
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    classifierMlAsset: false
+    cropTexture: false
+    debugPrint: false
+    detectorInputTexture: false
+    detectorMLAsset: false
+    maxDetections: false
+    minSideThreshold: false
+    recognitionScoreThreshold: false
+    thresholdMask: false
+    unclipRatioLongSide: false
+    unclipRatioShortSide: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - detectorMLAsset: !<reference.MLAsset> 00000000-0000-0000-0000-000000000000
+      detectorInputTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      maxDetections: 50
+      thresholdMask: 0.700000
+      unclipRatioLongSide: !<float> 1.000000
+      unclipRatioShortSide: !<float> 1.000000
+      minSideThreshold: 5
+      classifierMlAsset: !<reference.MLAsset> 00000000-0000-0000-0000-000000000000
+      cropTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      recognitionScoreThreshold: 0.800000
+      debugPrint: true
+  ScriptTypes:
+    -
+      {}

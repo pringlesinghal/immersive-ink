@@ -1,0 +1,38 @@
+- !<AssetImportMetadata/d3ae41e6-9e51-479d-abd0-212ed955bdb6>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> b065ad26-8d02-4dd2-87ce-07a8aebb782f
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> b065ad26-8d02-4dd2-87ce-07a8aebb782f
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 1756088c-9399-4b07-a99e-1d05c524008e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/d77a98ae-3536-4a4e-a1f3-f2340bf6782b>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/1756088c-9399-4b07-a99e-1d05c524008e>
+  SvgIcon: ""
+  Description: |-
+    Provides a map of chatracters to recognize
+    Usage: 
+    const characterMap = require("./Modules/CharacterMap").map;
+  InternalVersion: 1
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    {}
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    -
+      {}
+  ScriptTypes:
+    -
+      {}
