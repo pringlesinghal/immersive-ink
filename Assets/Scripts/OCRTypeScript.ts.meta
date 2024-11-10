@@ -1,0 +1,66 @@
+- !<AssetImportMetadata/2eecd091-b1fc-4952-86da-ebe38bf57fe6>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 2562bde6-c699-4910-a588-52bb5393be8b
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 2562bde6-c699-4910-a588-52bb5393be8b
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> eb343b35-135f-4951-b951-da53fde6f924
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/0f8fcf35-dd63-4830-bfb7-7fa141adbbe4>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/eb343b35-135f-4951-b951-da53fde6f924>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    classifierMlAsset: false
+    cropTexture: false
+    debugPrint: false
+    detectorInputTexture: false
+    detectorMLAsset: false
+    maxDetections: false
+    minSideThreshold: false
+    recognitionScoreThreshold: false
+    thresholdMask: false
+    unclipRatioLongSide: false
+    unclipRatioShortSide: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - detectorMLAsset: !<reference.MLAsset> 00000000-0000-0000-0000-000000000000
+      detectorInputTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      maxDetections: !<float> 50.000000
+      thresholdMask: 0.700000
+      unclipRatioLongSide: !<float> 1.000000
+      unclipRatioShortSide: !<float> 1.000000
+      minSideThreshold: !<float> 5.000000
+      classifierMlAsset: !<reference.MLAsset> 00000000-0000-0000-0000-000000000000
+      cropTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      recognitionScoreThreshold: 0.800000
+      debugPrint: true
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Asset.MLAsset detectorMLAsset
+    - // @input Asset.Texture detectorInputTexture
+    - '// @input float maxDetections = 50 {"widget":"slider", "min":1, "max":100, "step":1}'
+    - '// @input float thresholdMask = 0.7 {"widget":"slider", "min":0, "max":1, "step":0.01}'
+    - '// @input float unclipRatioLongSide = 1 {"widget":"slider", "min":1, "max":2, "step":0.01}'
+    - '// @input float unclipRatioShortSide = 1 {"widget":"slider", "min":1, "max":2, "step":0.01}'
+    - '// @input float minSideThreshold = 5 {"widget":"slider", "min":0, "max":25, "step":1}'
+    - // @input Asset.MLAsset classifierMlAsset
+    - // @input Asset.Texture cropTexture
+    - '// @input float recognitionScoreThreshold = 0.8 {"widget":"slider", "min":0, "max":1, "step":0.01}'
+    - // @input bool debugPrint = true

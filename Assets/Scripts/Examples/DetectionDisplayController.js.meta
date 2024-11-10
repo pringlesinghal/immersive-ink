@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/3ef175ae-f99e-4644-8e35-67d945719043>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 0fef9625-b982-4e47-9610-e2612445d673
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 0fef9625-b982-4e47-9610-e2612445d673
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> fa721d11-9e87-40e1-abab-dd376421c553
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/da2d023a-9bd2-4f88-a99a-7552d03ac923>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/fa721d11-9e87-40e1-abab-dd376421c553>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 1
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    allowSelect: false
+    applyRotation: false
+    boxDisplay: false
+    isSelected: false
+    normalColor: false
+    selectedColor: false
+    textDisplay: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - textDisplay: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      boxDisplay: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      applyRotation: false
+      allowSelect: false
+      isSelected: false
+      selectedColor: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+      normalColor: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+  ScriptTypes:
+    -
+      {}

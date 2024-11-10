@@ -1,0 +1,28 @@
+- !<AssetImportMetadata/217145cd-43af-4649-92cf-8f0d6fbead45>
+  ImportedAssetIds:
+    AnimatedTexture: !<reference> fa4c0a00-77c0-4407-af47-cdae24da4826
+    HINT_poin_at_text.png: !<reference> 70aa5777-a1e2-40a0-adfa-2da438169894
+  ImporterName: LensAnimationImporter
+  PrimaryAsset: !<reference> fa4c0a00-77c0-4407-af47-cdae24da4826
+  PackageType: LegacyPackage
+  PackagePolicy: CannotBeUnpackedTransparent
+  AssetDataMap:
+    AnimatedTexture: !<own> 270fdd27-4124-443a-a8c7-c11e8c18c577
+  DependentFiles:
+    - HINT_poin_at_text.png
+  ImporterSettings: !<AssetImporterSettings/7cb38e6f-8e80-448b-8f27-0472c826ca9f>
+    {}
+  CompressionSettings: !<SingleCompressionSettings/6021dc58-4aed-4d91-b9d2-01f1183b5bdc>
+    CompressorName: None
+    CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AnimatedTextureData/270fdd27-4124-443a-a8c7-c11e8c18c577>
+  AutoPlay: true
+  Reversed: false
+  PingPong: false
+  CurrentSequence: LPD_404_Point_in_text_v01
+  KeyFramesData:
+    LPD_404_Point_in_text_v01:
+      - time: 0.000000
+        value: 0
+      - time: 2.266667
+        value: 34

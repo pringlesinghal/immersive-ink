@@ -1,0 +1,89 @@
+- !<AssetImportMetadata/aaa8b102-d846-4716-85fb-2dde26740984>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 8fcff0c0-bd4b-4b7c-984e-147d679cef93
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 8fcff0c0-bd4b-4b7c-984e-147d679cef93
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> d0630f8c-df67-49bb-b4c8-72f8ef40e353
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/1b888bf5-2977-4d93-9394-a938a738226c>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/0268f285-e871-48de-ba8b-0d88ff2f7477>
+  PrefabRemaps:
+    []
+  Name: "ChatGPT Demo [DELETE_ME]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1b9d06ed-ac92-4716-97fd-29e9367f9d6a
+- !<ScriptComponent/1b9d06ed-ac92-4716-97fd-29e9367f9d6a>
+  PrefabRemaps:
+    []
+  Name: ChatGPT Demo
+  Enabled: true
+  ScriptAsset: !<reference> 22b4a881-98a9-4df6-a63d-d5d1d6574475
+  ScriptInputsDefault:
+    question: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      question: "What are some ideas for Lenses?"
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefab/9101e5a5-daf0-4953-829b-b4255ef66290>
+  PackagePath: ""
+  objects:
+    - !<own> de9a752c-d634-4b75-9e3e-645fa5336545
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/d0630f8c-df67-49bb-b4c8-72f8ef40e353>
+  SourceRemaps:
+    - 0e0dfd14-8f04-4d29-b7ca-5060ab110434: d3096b23-2508-4b67-a618-bdb8191a6b26
+    - 66c50434-4d28-4f82-8406-fc1e2d2ea668: de9a752c-d634-4b75-9e3e-645fa5336545
+    - f883121e-0bc2-485d-94fd-cc0d12eebef8: 0268f285-e871-48de-ba8b-0d88ff2f7477
+    - f9f9db6f-e7ca-4da5-b7af-b7516421b060: 1b9d06ed-ac92-4716-97fd-29e9367f9d6a
+  SourceState: !<own> 9101e5a5-daf0-4953-829b-b4255ef66290
+- !<ScriptComponent/d3096b23-2508-4b67-a618-bdb8191a6b26>
+  PrefabRemaps:
+    []
+  Name: ChatGPT Helper
+  Enabled: true
+  ScriptAsset: !<reference> 845bda33-d4c5-4862-ae8c-9ee7e9349b7d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/de9a752c-d634-4b75-9e3e-645fa5336545>
+  PrefabRemaps:
+    []
+  Name: ChatGPT Helper
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0268f285-e871-48de-ba8b-0d88ff2f7477
+  Components:
+    - !<own> d3096b23-2508-4b67-a618-bdb8191a6b26

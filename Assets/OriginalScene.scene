@@ -3,9 +3,12 @@
   objects:
     - !<own> 00000000-0000-0065-0000-000000000064
     - !<own> 0005641c-028d-459a-0000-000000014b4d
+    - !<own> 7904cbcc-73e7-4c81-b981-61ba5cdf5a55
     - !<own> 597f6fa4-23e5-4230-9e74-1ece142cd000
     - !<own> 2abe8abd-c678-41cd-84c1-e656ff52c02f
     - !<own> 79eabfe6-60d2-47bf-9700-968c34e13028
+    - !<own> 01fe6b55-f052-4b93-8a53-4e5df7b922cd
+    - !<own> f6e3ff12-d18f-4c25-84d4-8fa9f2f7de0a
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -26,7 +29,7 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> b9152bda-d8be-410e-b67e-399937451e05
   Components:
     - !<own> 00000000-0000-0065-0000-000000000065
     - !<own> e5553c8a-0b7e-4ef4-92d9-3e1318fb82c1
@@ -265,6 +268,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/01fe6b55-f052-4b93-8a53-4e5df7b922cd>
+  PrefabRemaps:
+    []
+  Name: TextToObject
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 947f2323-a55e-4486-9d81-b99d76efb995
 - !<ScriptComponent/03142dbd-a09e-4262-a111-19e44ac744e3>
   PrefabRemaps:
     []
@@ -1033,7 +1051,7 @@
   PrefabRemaps:
     []
   Name: ExtendableCapsuleExample
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: -17.000000, z: -60.000000}
@@ -1275,7 +1293,7 @@
   PrefabRemaps:
     []
   Name: ToggleButtonSphereExample
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: -10.000000, y: -5.000000, z: -60.000000}
@@ -1762,6 +1780,8 @@
     - !<own> 4cc3f033-9237-4d73-8ff0-038b7c946f62
     - !<own> ddf1962f-63cf-4c3a-9134-05159afdd4b3
     - !<own> 7109ccd0-235d-4b42-a14a-009cc4a720b2
+    - !<own> 9e608885-ace3-491e-a8d5-aafc4ef32735
+    - !<own> f636c505-fab1-4f71-ac86-69f718c34ba0
   Components:
     []
 - !<SceneObject/2b0cbf61-8c95-4d8d-832b-00eb2fa10ef3>
@@ -2058,7 +2078,7 @@
   PrefabRemaps:
     []
   Name: "[LEGACY] InteractorLineVisual"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -3137,6 +3157,22 @@
   Components:
     - !<own> fb412d06-bbc3-4c83-b120-f0eda092e7a1
     - !<own> 1c71035f-f003-4f71-ab11-7081594b173d
+- !<ScriptComponent/408927ac-c841-4ea1-bd3e-7275c18c02aa>
+  PrefabRemaps:
+    []
+  Name: ChatGPT Helper
+  Enabled: true
+  ScriptAsset: !<reference> 845bda33-d4c5-4862-ae8c-9ee7e9349b7d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/40c0d027-6331-43f7-90aa-addbbbea901e>
   PrefabRemaps:
     []
@@ -3215,7 +3251,7 @@
   PrefabRemaps:
     []
   Name: ContainerFrameUI
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 55.000000, y: -5.000000, z: -65.000000}
@@ -3259,23 +3295,6 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
-- !<ScriptComponent/43a7b456-bedc-4918-a2a5-3347a14f90bd>
-  PrefabRemaps:
-    []
-  Name: ClickOnButtonTest
-  Enabled: true
-  ScriptAsset: !<reference> bb624a86-2d92-4034-b35c-d896772c4c71
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      interactable: !<MappingBased.Interactable> 2f05197d-a20a-43e1-868b-dda03b364610
-      publicImage: !<reference.Image> edbaaf61-c466-4597-a0f6-552a5a824218
-  ScriptTypes:
-    "":
-      {}
 - !<SceneObject/43bbe078-bf65-4095-989c-58b9c547098b>
   PrefabRemaps:
     []
@@ -3379,7 +3398,7 @@
   PrefabRemaps:
     []
   Name: BillboardExample
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 10.000000, z: -60.000000}
@@ -3948,6 +3967,32 @@
     []
   Components:
     - !<own> 4e3a7770-d396-418e-a719-b872f046d73a
+- !<ScriptComponent/544edd48-9cee-4414-9a86-128fc5c83aac>
+  PrefabRemaps:
+    []
+  Name: OCRTypeScript
+  Enabled: true
+  ScriptAsset: !<reference> 2562bde6-c699-4910-a588-52bb5393be8b
+  ScriptInputsDefault:
+    maxDetections: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      detectorMLAsset: !<reference.MLAsset> 93972d2d-cb1a-4957-bb5f-f65cfb32d048
+      detectorInputTexture: !<reference.Texture> 996c6f4e-b2ad-4117-9e3e-3db82e6e97f5
+      maxDetections: !<float> 50.000000
+      thresholdMask: 0.750000
+      unclipRatioLongSide: !<float> 2.000000
+      unclipRatioShortSide: 1.500000
+      minSideThreshold: !<float> 2.000000
+      classifierMlAsset: !<reference.MLAsset> dfffccea-292c-4d6a-9027-e037a585d92f
+      cropTexture: !<reference.Texture> 6a26808b-7c58-4765-a883-1d396e0b1e27
+      recognitionScoreThreshold: 0.700000
+      debugPrint: false
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/5498b0e6-a864-4881-ac8a-648943d6dea1>
   PrefabRemaps:
     []
@@ -4137,7 +4182,7 @@
   PrefabRemaps:
     []
   Name: PinchButtonCapsuleExample
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: -11.000000, z: -60.000000}
@@ -4745,7 +4790,6 @@
     - !<own> 99075b90-78a8-4904-9d1c-96aadc490f11
     - !<own> a762d926-e47e-4322-9d1d-1e20f558821f
     - !<own> 1da7f812-08b9-4c7b-9b8b-996de47227b9
-    - !<own> b9152bda-d8be-410e-b67e-399937451e05
     - !<own> 5772ff9e-cf87-4b10-8d74-d9329635251a
     - !<own> 65119375-c44f-4915-a239-b0036b65f3c0
     - !<own> a677b29a-6a93-490a-8df1-19b2ca301293
@@ -4906,7 +4950,7 @@
   PrefabRemaps:
     []
   Name: PinchButtonSphereExample
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: -10.000000, y: -11.000000, z: -60.000000}
@@ -5273,7 +5317,7 @@
   PrefabRemaps:
     []
   Name: GetCatFacts
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -5387,6 +5431,24 @@
     - !<own> 1418bf88-4b55-41f3-b128-70dd0d59039f
   Components:
     []
+- !<SceneObject/7904cbcc-73e7-4c81-b981-61ba5cdf5a55>
+  PrefabRemaps:
+    - 408927ac-c841-4ea1-bd3e-7275c18c02aa: 0e0dfd14-8f04-4d29-b7ca-5060ab110434
+    - 7904cbcc-73e7-4c81-b981-61ba5cdf5a55: 66c50434-4d28-4f82-8406-fc1e2d2ea668
+    - c76dbd9c-3a69-4abc-95db-8a103f88e35d: f9f9db6f-e7ca-4da5-b7af-b7516421b060
+    - ca5d7552-9b7b-4ed5-83f6-b0b616bddb5a: f883121e-0bc2-485d-94fd-cc0d12eebef8
+  Name: ChatGPT Helper
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> ca5d7552-9b7b-4ed5-83f6-b0b616bddb5a
+  Components:
+    - !<own> 408927ac-c841-4ea1-bd3e-7275c18c02aa
 - !<ScriptComponent/790d18d2-8036-421e-aa91-09e09782ea02>
   PrefabRemaps:
     []
@@ -5459,6 +5521,22 @@
     - !<own> 42b2f921-5468-4160-bc6c-23febe3c2117
   Components:
     []
+- !<ScriptComponent/7a19c481-f70c-4801-8d92-72b727fceca0>
+  PrefabRemaps:
+    []
+  Name: GestureTest
+  Enabled: true
+  ScriptAsset: !<reference> 783bb61e-9a56-4a13-8698-a39f1a363131
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/7a89104f-74f9-40cd-b498-0f41a108bca9>
   PrefabRemaps:
     []
@@ -6123,7 +6201,7 @@
   PrefabRemaps:
     []
   Name: "[Manipulate Example] Sphere"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 25.000000, y: -22.000000, z: -70.000000}
@@ -6578,6 +6656,24 @@
     bottom: -1.050000
     right: 3.750000
     top: 1.050000
+- !<ScriptComponent/947f2323-a55e-4486-9d81-b99d76efb995>
+  PrefabRemaps:
+    []
+  Name: TextToObject
+  Enabled: true
+  ScriptAsset: !<reference> 1becc9f0-1e46-4ad7-afe0-568b09ba4480
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      remoteServiceModule: !<reference.RemoteServiceModule> acccd408-c3a8-4fab-8ed9-1a9428b13a40
+      pbrMaterialHolder: !<reference.Material> ebc787b6-15f4-4e36-9e3a-2b9d4a57fec5
+      meshParent: !<reference.SceneObject> f6e3ff12-d18f-4c25-84d4-8fa9f2f7de0a
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/94e3a4bd-c8bf-4701-85da-30c08f5d6145>
   PrefabRemaps:
     []
@@ -6754,7 +6850,7 @@
   PrefabRemaps:
     []
   Name: SliderExample
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 1.000000, z: -60.000000}
@@ -6834,6 +6930,24 @@
     - !<own> 60f030ca-7f63-41ff-90f6-217ae9d80427
   Components:
     []
+- !<SceneObject/9e608885-ace3-491e-a8d5-aafc4ef32735>
+  PrefabRemaps:
+    - 9e608885-ace3-491e-a8d5-aafc4ef32735: c03d5dd9-3a39-4aed-bc49-92b5594b2819
+    - d0c6b8fe-0018-4766-bd8d-f176485e9950: c15bd911-d1d5-424c-bd82-ffd48f154fd1
+  Name: OCRTypeScript
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d0c6b8fe-0018-4766-bd8d-f176485e9950
+    - !<own> dec368dc-bffc-4180-b218-70a3237bdc09
+    - !<own> 544edd48-9cee-4414-9a86-128fc5c83aac
 - !<SceneObject/9ec97033-a73e-431a-810d-7cefb332d2bd>
   PrefabRemaps:
     []
@@ -6959,6 +7073,25 @@
     - !<own> 7d6ae339-177b-4e14-bf6b-ca73b8a6f5bb
   Components:
     []
+- !<ScriptComponent/a30236ca-20ae-4965-9673-ac7fdb91c43f>
+  PrefabRemaps:
+    []
+  Name: ClickOnButtonTest
+  Enabled: true
+  ScriptAsset: !<reference> bb624a86-2d92-4034-b35c-d896772c4c71
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      ocrController: !<MappingBased.OCRTypeScript> 544edd48-9cee-4414-9a86-128fc5c83aac
+      interactable: !<MappingBased.Interactable> 2f05197d-a20a-43e1-868b-dda03b364610
+      publicImage: !<reference.Image> edbaaf61-c466-4597-a0f6-552a5a824218
+      textToObject: !<MappingBased.TextToObject> 947f2323-a55e-4486-9d81-b99d76efb995
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/a57a7ca3-e822-4148-855b-96a8a55a5b94>
   PrefabRemaps:
     []
@@ -6979,7 +7112,7 @@
   PrefabRemaps:
     []
   Name: ScrollViewCanvasExample
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: -40.000000, y: 0.000000, z: -60.000000}
@@ -7009,7 +7142,7 @@
   PrefabRemaps:
     []
   Name: ToggleButtonCapsuleExample
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: -5.000000, z: -60.000000}
@@ -7201,7 +7334,7 @@
   PrefabRemaps:
     []
   Name: HandVisuals
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -7605,7 +7738,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 18.889837, z: -60.000000}
+    position: {x: 5.000000, y: 0.000000, z: -60.000000}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.250000, y: 1.250000, z: 1.250000}
     hasSegmentScaleCompensation: false
@@ -7622,7 +7755,7 @@
     - !<own> 34c3a114-1d95-411f-be91-c7feb514f57d
     - !<own> ae777e43-7f9e-4188-ab5f-59a7083f880d
     - !<own> 7aa3de42-606c-4581-bbc6-6763b5e1fb8f
-    - !<own> 43a7b456-bedc-4918-a2a5-3347a14f90bd
+    - !<own> a30236ca-20ae-4965-9673-ac7fdb91c43f
 - !<ScriptComponent/b9261a04-2895-4578-9bf3-e37f259ea3af>
   PrefabRemaps:
     []
@@ -8123,6 +8256,22 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: false
+- !<ScriptComponent/c76dbd9c-3a69-4abc-95db-8a103f88e35d>
+  PrefabRemaps:
+    []
+  Name: ChatGPT Demo
+  Enabled: false
+  ScriptAsset: !<reference> 22b4a881-98a9-4df6-a63d-d5d1d6574475
+  ScriptInputsDefault:
+    question: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      question: "What are some ideas for Lenses?"
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/c7ca62cc-70f0-468b-bac6-da5d555191ff>
   PrefabRemaps:
     []
@@ -8232,6 +8381,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/ca5d7552-9b7b-4ed5-83f6-b0b616bddb5a>
+  PrefabRemaps:
+    []
+  Name: "ChatGPT Demo [DELETE_ME]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c76dbd9c-3a69-4abc-95db-8a103f88e35d
 - !<SceneObject/cb3a4816-b190-4dc0-ab2c-1ed4d19b25e4>
   PrefabRemaps:
     []
@@ -8417,6 +8581,32 @@
     - !<own> 598e25a0-875b-430a-87af-795706c7cfd3
   Components:
     []
+- !<ScriptComponent/d0c6b8fe-0018-4766-bd8d-f176485e9950>
+  PrefabRemaps:
+    []
+  Name: OpticalCharacterRecognition
+  Enabled: false
+  ScriptAsset: !<reference> 785dd180-6f77-42bd-ba0e-f5ad960f1f6d
+  ScriptInputsDefault:
+    maxDetections: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      detectorMLAsset: !<reference.MLAsset> 64067b94-23b0-46ec-a353-d5c7689e18b9
+      detectorInputTexture: !<reference.Texture> faf15b44-1d53-4e51-8baf-65762862438a
+      maxDetections: 50
+      thresholdMask: 0.750000
+      unclipRatioLongSide: !<float> 2.000000
+      unclipRatioShortSide: 1.500000
+      minSideThreshold: 2
+      classifierMlAsset: !<reference.MLAsset> c0df9685-d4e3-4198-84a1-fe18c22ace00
+      cropTexture: !<reference.Texture> a6b603b0-30c0-4eb6-bb97-ff2ff99ea424
+      recognitionScoreThreshold: 0.700000
+      debugPrint: false
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/d16639a2-796b-4562-a94f-09a8f36263e0>
   PrefabRemaps:
     []
@@ -8797,6 +8987,22 @@
   Components:
     - !<own> b9a470cc-bb7b-41b4-b799-6930678ca255
     - !<own> 31e59718-523b-4498-9a56-1dffa7751fa3
+- !<ScriptComponent/dec368dc-bffc-4180-b218-70a3237bdc09>
+  PrefabRemaps:
+    []
+  Name: ChatGPTTest
+  Enabled: true
+  ScriptAsset: !<reference> ac5b78a0-3e75-472a-8834-b522cc7d077b
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<ColliderComponent/df2324cb-affd-47a2-b8e9-849558c9b9d4>
   PrefabRemaps:
     []
@@ -9725,7 +9931,7 @@
   PrefabRemaps:
     []
   Name: "[Manipulate Example] Box"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 25.000000, y: -6.000000, z: -70.000000}
@@ -9772,6 +9978,21 @@
     - !<own> d5638ffb-21ea-4e36-bd73-b23a90c4a9fd
   Components:
     []
+- !<SceneObject/f636c505-fab1-4f71-ac86-69f718c34ba0>
+  PrefabRemaps:
+    []
+  Name: GestureTest
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7a19c481-f70c-4801-8d92-72b727fceca0
 - !<SceneObject/f680fdbc-824b-4c58-8c1b-f4bd29c1a1c2>
   PrefabRemaps:
     []
@@ -9785,6 +10006,21 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 6b5732d9-7a41-49d7-899e-1f0bb8e6257d
+  Components:
+    []
+- !<SceneObject/f6e3ff12-d18f-4c25-84d4-8fa9f2f7de0a>
+  PrefabRemaps:
+    []
+  Name: BookLocation
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -20.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
   Components:
     []
 - !<ScriptComponent/f74fe48d-ccd3-4477-bf8e-cbc659779945>

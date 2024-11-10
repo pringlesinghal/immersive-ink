@@ -1,0 +1,50 @@
+- !<AssetImportMetadata/20aa8a3c-236d-407d-8630-1156931d6203>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 2119c563-6d21-43ad-be36-2c9746e82d92
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 2119c563-6d21-43ad-be36-2c9746e82d92
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 0988d33b-9e4a-4de7-a3c1-1090503f9412
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/84f3d275-7c21-4f22-b84a-2d0ed7113b38>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/0988d33b-9e4a-4de7-a3c1-1090503f9412>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 1
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    amount: false
+    detectionScreen: false
+    displayObject: false
+    editConnections: false
+    editScreen: false
+    inputCamera: false
+    ocrController: false
+    outputText: false
+    recognitionScreen: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - ocrController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      displayObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      amount: 10
+      editConnections: false
+      detectionScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      recognitionScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      editScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      outputText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      inputCamera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
