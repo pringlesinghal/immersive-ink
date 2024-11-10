@@ -1,0 +1,69 @@
+- !<AssetImportMetadata/be0215d9-508b-4fe4-b123-f486fa15adcc>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 82f01a99-f389-47e9-99f2-cd471a2ea608
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 82f01a99-f389-47e9-99f2-cd471a2ea608
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> e7895fd9-c1b2-4901-a9f7-4abb65c47e88
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/6648eb9c-8f8d-4f63-871e-f8fa4d8a12f8>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<VFXComponent/1b571a95-ca23-487f-a291-d95b1ba30c17>
+  PrefabRemaps:
+    []
+  Name: VFX Component
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> b93ddd3e-f6fa-4b24-a4cf-c61f28de0b89
+- !<ObjectPrefab/2184c0ec-67c1-4c17-a342-f16df454d1d1>
+  PackagePath: Boids__PLACE_IN_OBJECTS_PANEL
+  objects:
+    - !<own> dc23dc6a-b38c-4533-9039-403e1c31fff5
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/8ff79d6e-636b-42aa-86f4-5ec7b4bad792>
+  PrefabRemaps:
+    []
+  Name: Boids VFX
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.904781, y: 0.000000, z: -2.393101}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1b571a95-ca23-487f-a291-d95b1ba30c17
+- !<SceneObject/dc23dc6a-b38c-4533-9039-403e1c31fff5>
+  PrefabRemaps:
+    []
+  Name: Boids__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8ff79d6e-636b-42aa-86f4-5ec7b4bad792
+  Components:
+    []
+- !<ObjectPrefabAssetData/e7895fd9-c1b2-4901-a9f7-4abb65c47e88>
+  SourceRemaps:
+    - 04188b7b-d90e-4da5-b5e7-be668127ad7e: 1b571a95-ca23-487f-a291-d95b1ba30c17
+    - 0b71babf-0e44-49c7-9e1d-b029795d749c: dc23dc6a-b38c-4533-9039-403e1c31fff5
+    - 79218862-d48f-48a8-948c-b1d45f537477: 8ff79d6e-636b-42aa-86f4-5ec7b4bad792
+  SourceState: !<own> 2184c0ec-67c1-4c17-a342-f16df454d1d1

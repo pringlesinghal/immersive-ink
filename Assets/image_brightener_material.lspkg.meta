@@ -14,6 +14,7 @@
     eb356e11-c8fb-4342-b896-3e114f3c2e6e: !<reference> d3dc8243-a869-464e-a021-2c5d37a124a7
     ebc787b6-15f4-4e36-9e3a-2b9d4a57fec5: !<reference> 26eec68d-8a82-4d62-a4ec-3d5d72b2339b
     f700a54f-5ae5-432b-b9d9-dde9ea9e2b83: !<reference> 2da574a4-b452-4713-842b-3eccfec0a256
+    375b7f61-f513-4482-88d9-b3d0c40b1c9e: !<reference> 67e5bc29-a225-4cbd-9049-915009a477aa
   ImporterName: NativePackageImporter
   PrimaryAsset: !<reference> 61ed9582-b3f4-48a2-9d8f-1b546b070fcb
   PackageType: PackedNativePackageRoot
