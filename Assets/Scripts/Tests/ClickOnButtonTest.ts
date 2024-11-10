@@ -85,7 +85,10 @@ export class ClickOnButtonTest extends BaseScriptComponent {
 
                 const imageComponent = this.publicImage
                 imageComponent.enabled = true
-                imageComponent.mainPass.baseTex = readableTexture
+                if (imageComponent.mainPass != null)
+                {
+                    imageComponent.mainPass.baseTex = readableTexture
+                }
             })
 
             //@ts-ignore

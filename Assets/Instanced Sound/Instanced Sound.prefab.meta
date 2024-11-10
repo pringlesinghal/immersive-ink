@@ -1,0 +1,90 @@
+- !<AssetImportMetadata/4f508d87-a089-43f4-be87-ad830aad5b21>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> b31fd053-c949-4f76-be19-45cdb62f716f
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> b31fd053-c949-4f76-be19-45cdb62f716f
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 60f1dd7e-bae6-48aa-867b-53be49c380bb
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/f485a0d0-8500-4827-b711-175fbe237a27>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/0c35a6d0-6554-41a6-ad6e-2caedb532aea>
+  PrefabRemaps:
+    []
+  Name: "UsageExample [EDIT EVENT]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d221a0c4-7af2-494d-be7d-5aa1e3cf5314
+- !<ObjectPrefabAssetData/60f1dd7e-bae6-48aa-867b-53be49c380bb>
+  SourceRemaps:
+    - 97c9d4f0-35fe-4e4e-b1e8-fef09b783ed7: 0c35a6d0-6554-41a6-ad6e-2caedb532aea
+    - 9b32ca03-b8b7-430a-9e5c-644fd606c49f: abfba69c-73dd-4575-b77d-684a91f4fdcb
+    - ee463451-a731-4045-a42d-50db0a39bdcd: cbf0d1ac-beaf-4706-893c-74e0a271e843
+    - f66217f1-4087-423b-b7e1-19791daa31a1: d221a0c4-7af2-494d-be7d-5aa1e3cf5314
+  SourceState: !<own> 8c6e3fe0-5837-4edb-9de2-bf7780d0f441
+- !<ObjectPrefab/8c6e3fe0-5837-4edb-9de2-bf7780d0f441>
+  PackagePath: ""
+  objects:
+    - !<own> cbf0d1ac-beaf-4706-893c-74e0a271e843
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/abfba69c-73dd-4575-b77d-684a91f4fdcb>
+  PrefabRemaps:
+    []
+  Name: InstanceSound
+  Enabled: true
+  ScriptAsset: !<reference> 5da963dc-6fa6-4521-a736-439e0d941da0
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/cbf0d1ac-beaf-4706-893c-74e0a271e843>
+  PrefabRemaps:
+    []
+  Name: InstanceSound__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0c35a6d0-6554-41a6-ad6e-2caedb532aea
+  Components:
+    - !<own> abfba69c-73dd-4575-b77d-684a91f4fdcb
+- !<ScriptComponent/d221a0c4-7af2-494d-be7d-5aa1e3cf5314>
+  PrefabRemaps:
+    []
+  Name: Example Usage_TouchStartEvent
+  Enabled: true
+  ScriptAsset: !<reference> 6b6276cf-1267-4bf8-8716-73f1c7a7d3be
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      instanceSoundScript: !<reference.ScriptComponent> abfba69c-73dd-4575-b77d-684a91f4fdcb
+      audioTrack: !<reference.AudioTrackAsset> fdb21dfd-4f5c-4a23-8cd3-cc09828588fa
+  ScriptTypes:
+    "":
+      {}

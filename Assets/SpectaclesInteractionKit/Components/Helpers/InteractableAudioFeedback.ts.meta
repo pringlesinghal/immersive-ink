@@ -25,13 +25,13 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     hoverAudioTrack: false
-    triggerEndAudioTrack: false
+    triggerEndAudioTrack: true
     triggerStartAudioTrack: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
     - hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
+      triggerStartAudioTrack: !<reference.AudioTrackAsset> 8a18c70d-b84c-4f2b-8df7-671b00f4af09
       triggerEndAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -

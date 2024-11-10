@@ -1,0 +1,94 @@
+- !<AssetImportMetadata/93dc929d-d4f5-4eb2-8f66-8ccfde870b22>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 22f388cf-0ca8-4daf-9808-3693c6c966a3
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 22f388cf-0ca8-4daf-9808-3693c6c966a3
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 68620cd4-1357-41d1-a6da-f10071539d5c
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/ca8e2efe-f832-4bae-ac3a-d83d829817b8>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/68620cd4-1357-41d1-a6da-f10071539d5c>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    cameraAnimation: false
+    cameraDistanceAnimationScale: false
+    desiredPosition: false
+    directionObject: false
+    directionSphere: false
+    easingFunctionPA: false
+    easingFunctionZOA: false
+    easingTypePA: false
+    easingTypeZOA: false
+    horizontalDesired: false
+    horizontalStart: false
+    localSpaceRotation: false
+    locationDesired: false
+    locationStart: false
+    pauseAfterZoomOutIn: false
+    pinAnimationTimeDesired: false
+    pinAnimationTimeStart: false
+    placeDesiredName: false
+    placeStartName: false
+    startPosition: false
+    textDesiredPosition: false
+    textStartPosition: false
+    timeForZoomOutIn: false
+    travelAnimation: false
+    travelAnimationStructure: false
+    travelAnimationTime: false
+    travelVehicle: false
+    verticalDesired: false
+    verticalStart: false
+    waitToPlay: false
+    zoomType: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - zoomType: ZoomOut
+      horizontalStart: !<float> 0.000000
+      verticalStart: !<float> 0.000000
+      placeStartName: ""
+      horizontalDesired: !<float> 0.000000
+      verticalDesired: !<float> 0.000000
+      placeDesiredName: ""
+      pinAnimationTimeStart: !<float> 2.000000
+      pinAnimationTimeDesired: !<float> 2.000000
+      easingFunctionPA: Quadratic
+      easingTypePA: Out
+      cameraDistanceAnimationScale: !<float> 1.000000
+      timeForZoomOutIn: !<float> 0.000000
+      pauseAfterZoomOutIn: !<float> 0.000000
+      travelAnimationTime: !<float> 0.000000
+      easingFunctionZOA: Quadratic
+      easingTypeZOA: Out
+      travelAnimationStructure: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      textStartPosition: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+      startPosition: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      locationStart: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      textDesiredPosition: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+      desiredPosition: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      locationDesired: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cameraAnimation: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      travelAnimation: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      travelVehicle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      directionSphere: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      directionObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      waitToPlay: false
+      localSpaceRotation: false
+  ScriptTypes:
+    -
+      {}

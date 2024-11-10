@@ -1,0 +1,44 @@
+- !<AssetImportMetadata/bc074fe6-50f8-4d49-b96a-ec284a41bcd2>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> c79243a6-ff94-495f-ad27-6ebd1a1ea174
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> c79243a6-ff94-495f-ad27-6ebd1a1ea174
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> a5190227-f6c0-43e3-aa23-875295e4765e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/f6d04000-a1df-4e43-9fe1-41b3eaad3b91>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/a5190227-f6c0-43e3-aa23-875295e4765e>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    exampleObject: false
+    flyIn: false
+    flyInSpeed: false
+    hint: false
+    offsetFromPalm: false
+    startPosition: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - exampleObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      offsetFromPalm: !<Vec3> {x: 0.000000, y: 10.000000, z: 0.000000}
+      flyIn: true
+      startPosition: !<Vec3> {x: 0.000000, y: 50.000000, z: 0.000000}
+      flyInSpeed: 10
+      hint: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

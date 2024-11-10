@@ -1,0 +1,14 @@
+- !<AssetImportMetadata/d5e5ff86-b82e-4971-aea8-74b811a680b2>
+  ImportedAssetIds:
+    ScriptGraph: !<reference> 8f4521ea-bc6c-4b4a-956a-fd60c5702af8
+  ImporterName: ScriptGraphAssetImporter
+  PrimaryAsset: !<reference> 8f4521ea-bc6c-4b4a-956a-fd60c5702af8
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/b083be04-1bf5-49df-aea9-2ef433ef7509>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000

@@ -1,8 +1,8 @@
-- !<Material/61e76acd-4ac1-446e-8301-1f63a6703318>
+- !<Material/4f485bb3-3f4b-406f-befe-7d3f14a93ef0>
   PackagePath: ""
   PassesInfo:
-    - !<own> 4c2b6b31-e423-441b-834a-810d90cd9e91
-- !<PassInfo/4c2b6b31-e423-441b-834a-810d90cd9e91>
+    - !<own> b8ca9f51-cd94-41eb-ac79-94b9444f26ee
+- !<PassInfo/b8ca9f51-cd94-41eb-ac79-94b9444f26ee>
   DepthWrite: true
   DepthTest: true
   DepthFunction: LessEqual
@@ -14,9 +14,7 @@
   FrustumCullPad: 0.000000
   InstanceCount: 1
   Defines:
-    - ENABLE_BASE_TEX
-    - ENABLE_NORMALMAP
-    - ENABLE_LIGHTING
+    []
   BlendMode: Disabled
   Properties:
     Port_Center_N016:
@@ -34,85 +32,40 @@
     baseTex:
       typeIdx: 9
       value:
-        id: 06711b63-5078-48db-83ce-d935e8402867
+        id: ffffffff-ffff-ffff-ffff-ffffffffffff
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
           wrapModeV: Repeat
           wrapModeW: Repeat
-          borderColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: false
         type: Texture2D
-    baseTexBorderColor:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    baseTexDims:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    baseTexTransform:
-      typeIdx: 7
-      value:
-        0: {x: 1.000000, y: 0.000000, z: 0.000000}
-        1: {x: 0.000000, y: 1.000000, z: 0.000000}
-        2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    baseTexUvMinMax:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     materialParamsTex:
       typeIdx: 9
       value:
-        id: c71aef89-00d5-49a6-a4e9-d215bbe4f579
+        id: ffffffff-ffff-ffff-ffff-ffffffffffff
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
           wrapModeV: Repeat
           wrapModeW: Repeat
-          borderColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: false
         type: Texture2D
-    materialParamsTexBorderColor:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    materialParamsTexDims:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    materialParamsTexTransform:
-      typeIdx: 7
-      value:
-        0: {x: 1.000000, y: 0.000000, z: 0.000000}
-        1: {x: 0.000000, y: 1.000000, z: 0.000000}
-        2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    materialParamsTexUvMinMax:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     normalTex:
       typeIdx: 9
       value:
-        id: aa5845c4-caa0-4e39-977f-a01ef0933553
+        id: ffffffff-ffff-ffff-ffff-ffffffffffff
         sampler:
           filteringMode: Trilinear
           wrapModeU: Repeat
           wrapModeV: Repeat
           wrapModeW: Repeat
-          borderColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
           mipmaps: false
         type: Texture2D
-    normalTexBorderColor:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    normalTexDims:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    normalTexTransform:
-      typeIdx: 7
-      value:
-        0: {x: 1.000000, y: 0.000000, z: 0.000000}
-        1: {x: 0.000000, y: 1.000000, z: 0.000000}
-        2: {x: 0.000000, y: 0.000000, z: 1.000000}
-    normalTexUvMinMax:
-      typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     uvScale:
       typeIdx: 1
       value: 1.000000
-  Pass: !<reference> bab72c39-9c6a-4296-9d99-4aa0b344ae1a
+  Pass: !<reference> 3cd1dfd8-e0f1-4485-b6da-e6d554818dd0

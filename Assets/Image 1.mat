@@ -1,3 +1,4 @@
+<<<<<<< LOCAL
 - !<Material/6da2b2f6-b26d-4f3a-ba8c-7223f02e73d7>
   PackagePath: ""
   PassesInfo:
@@ -67,3 +68,9 @@
       typeIdx: 0
       value: 0
   Pass: !<reference> 930759b1-a961-499e-9ffb-6273bb65bffd
+=======
+- !<Material/6915cdde-6d1f-44e7-979e-fb0049e1cf32>
+  PackagePath: ""
+  PassesInfo:
+    []
+>>>>>>> REMOTE
