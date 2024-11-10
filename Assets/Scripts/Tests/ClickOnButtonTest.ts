@@ -2,6 +2,10 @@ import { TextToObject } from 'Scripts/TextToObject';
 import { Interactable } from '../../SpectaclesInteractionKit/Components/Interaction/Interactable/Interactable';
 import { OCRTypeScript } from 'Scripts/OCRTypeScript';
 import { setTimeout } from "SpectaclesInteractionKit/Utils/debounce";
+import { PlaceInFrontCamera } from 'Scripts/PlaceInFrontCamera';
+import { MoveRandomDirections } from 'Scripts/MoveRandomDirections';
+import { ScaleOnce } from '../ScaleOnce';
+import { AudioPlayScript } from 'Scripts/AudioPlayScript';
 
 @component
 export class ClickOnButtonTest extends BaseScriptComponent {
@@ -27,10 +31,90 @@ export class ClickOnButtonTest extends BaseScriptComponent {
 
     startTracking: Boolean = true;
 
+    @input
+    textHolder: SceneObject
+    @input
+    textThreeD: Text3D
+
+    @input
+    placeInFrontCamera: PlaceInFrontCamera
+
+    @input
+    moveRandomDirections: MoveRandomDirections
+
+    @input
+    scaleOnce: ScaleOnce
+
+    @input
+    seaTurtleAudio: AudioPlayScript
+    @input
+    dolphinAudio: AudioPlayScript
+    @input
+    blackRhinoAudio: AudioPlayScript
+    @input
+    asianElephantAudio: AudioPlayScript
+    @input
+    monarchButterflyAudio: AudioPlayScript
+    @input
+    octopusAudio: AudioPlayScript
+
+    // EFFECTS ARE HERE
+    @input
+    seaTurtlesInteractiveBubbles: SceneObject
+    @input
+    butterflyGlobe: SceneObject
+    @input
+    butterflyParticles: SceneObject
+    @input
+    dolphinTrailSpiral: SceneObject
+    @input
+    octopusBubble: SceneObject
+    @input
+    rhinoBoidsElephant: SceneObject
+
+    @input
+    camera: Camera
+
+    @input
+    buttonMesh: RenderMeshVisual;
+    @input
+    buttonInteractable: Interactable;
+    @input
+    readText: Text3D
+
     /*
     @input
     testMaterial: Material
     */
+
+    placeSpecificInFrontCamera(sceneObject: SceneObject) {
+        print("Place")
+        
+        var cameraTransform = this.camera.getTransform();
+        var myTransform = sceneObject.getTransform();        
+        
+        // var forward = cameraTransform.forward;
+
+        // Get forward direction and apply uniform scaling for a base distance from the camera
+        var forward = cameraTransform.forward.uniformScale(50);
+
+        // Generate random offsets
+        const leftRightOffset = (Math.random() * 2 - 1) * 50; // Random offset between -10 and 10 on the left-right axis
+        const forwardVariance = (Math.random() * 5);          // Random variance between 0 and 5 in the forward direction
+
+        // Get the camera's right direction (perpendicular to forward and up vectors)
+        var right = cameraTransform.right;
+
+        // Calculate the new position with offsets
+        var randomPosition = cameraTransform.getWorldPosition()
+            .sub(forward)                          // Position 50 units in front of the camera
+            .sub(forward.uniformScale(forwardVariance)) // Apply forward variance beyond 50
+            .add(right.uniformScale(leftRightOffset));   // Apply left-right offset
+
+        // Set the new position and align the rotation with the camera
+        myTransform.setWorldPosition(randomPosition);
+        myTransform.setWorldRotation(cameraTransform.getWorldRotation());
+    }
     
     onAwake() {
         print("Hello world.");
@@ -206,7 +290,7 @@ export class ClickOnButtonTest extends BaseScriptComponent {
                     print(summaryOCR);
 
                     if (rects.length != 0 && summaryOCR.length > 2) {
-                        var question = "Give me one noun that summarizes this text in singular form: " + summaryOCR;
+                        var question = "Give me one noun that summarizes this text in singular form out of Dolphin, Black Rhino, Asian Elephant, Monarch Butterfly, Octopus, Sea Turtle: " + summaryOCR;
 
                         // GPT Test:
                         var request = { 
@@ -219,15 +303,86 @@ export class ClickOnButtonTest extends BaseScriptComponent {
                         //@ts-ignore
                         global.chatGpt.completions(request, (errorStatus, response) => {
                             if (!errorStatus && typeof response === 'object') {
+
+                                // Place in front of the camera.
+                                this.placeInFrontCamera.testPlaceInFrontCamera();
+
                                 const mainAnswer = response.choices[0].message.content;
 
                                 print("ChatGPT Answer: ");
-                                print(mainAnswer);
+                                print(mainAnswer);                                
+                                
+                                // Change the text.
+                                this.textThreeD.text = mainAnswer;
 
                                 // Create the model
                                 this.textToObject.triggerOnTap(mainAnswer);
 
-                                this.restoreUpdateTracking();
+                                this.moveRandomDirections.getRandomPositionWithinRangeOrigin(2);
+
+                                // Scale
+                                this.scaleChange();
+
+                                // Stop audio
+                                this.stopAllAudio();
+                                this.turnOffAllParticles();
+
+                                let mainAnswerLowerCased = mainAnswer.toLowerCase();
+
+                                if (mainAnswerLowerCased == "Sea Turtle".toLowerCase()) {
+                                    // this.seaTurtleAudio.playAudio();
+                                    this.delayPlayAudio(this.seaTurtleAudio);
+
+                                    this.seaTurtlesInteractiveBubbles.enabled = true;
+
+                                    // this.placeSpecificInFrontCamera(this.seaTurtlesInteractiveBubbles);
+                                }
+                                else if (mainAnswerLowerCased == "Dolphin".toLowerCase()) {
+                                    // this.dolphinAudio.playAudio();
+                                    this.delayPlayAudio(this.dolphinAudio);
+
+                                    this.dolphinTrailSpiral.enabled = true;
+                                    this.octopusBubble.enabled = true;
+
+                                    this.placeSpecificInFrontCamera(this.dolphinTrailSpiral);
+                                }
+                                else if (mainAnswerLowerCased == "Black Rhino".toLowerCase()) {
+                                    this.delayPlayAudio(this.blackRhinoAudio);
+                                    // this.blackRhinoAudio.playAudio();
+
+                                    this.rhinoBoidsElephant.enabled = true;
+                                }
+                                else if (mainAnswerLowerCased == "Asian Elephant".toLowerCase()) {
+                                    this.delayPlayAudio(this.asianElephantAudio);
+                                    // this.asianElephantAudio.playAudio();
+
+                                    this.rhinoBoidsElephant.enabled = true;
+                                }
+                                else if (mainAnswerLowerCased == "Monarch Butterfly".toLowerCase()) {
+                                    this.delayPlayAudio(this.monarchButterflyAudio);
+                                    // this.monarchButterflyAudio.playAudio();
+
+                                    this.butterflyParticles.enabled = true;
+                                    this.butterflyGlobe.enabled = true;
+
+                                    this.placeSpecificInFrontCamera(this.butterflyParticles);
+                                    this.placeSpecificInFrontCamera(this.butterflyGlobe);
+                                }
+                                else if (mainAnswerLowerCased == "Octopus".toLowerCase()) {
+                                    this.delayPlayAudio(this.octopusAudio);
+                                    // this.octopusAudio.playAudio();
+
+                                    this.dolphinTrailSpiral.enabled = true;
+                                    this.octopusBubble.enabled = true;
+                                }
+
+                                this.publicImage.enabled = false;
+                                // Moved.
+                                // this.restoreUpdateTracking();
+
+                                this.buttonMesh.enabled = false;
+                                this.buttonInteractable.enabled = false;
+                                this.readText.enabled = false;
                             } else {
                                 print(JSON.stringify(response));
                             }
@@ -260,6 +415,46 @@ export class ClickOnButtonTest extends BaseScriptComponent {
                 print('Error playing clicking the button: ' + e);
             }
         });
+    }
+
+    async delayPlayAudio(audioPlayScript: AudioPlayScript) {
+        await this.delay(2000);
+
+        audioPlayScript.playAudio();
+    }
+
+    turnOffAllParticles() {
+        this.seaTurtlesInteractiveBubbles.enabled = false
+        this.butterflyGlobe.enabled = false
+        this.butterflyParticles.enabled = false;
+        this.dolphinTrailSpiral.enabled = false;
+        this.octopusBubble.enabled = false;
+        this.rhinoBoidsElephant.enabled = false;
+    }
+
+    stopAllAudio() {
+        this.seaTurtleAudio.stopAudio();
+        this.dolphinAudio.stopAudio();
+        this.asianElephantAudio.stopAudio();
+        this.monarchButterflyAudio.stopAudio();
+        this.blackRhinoAudio.stopAudio();
+        this.octopusAudio.stopAudio();
+    }
+
+    async scaleChange() {
+        this.scaleOnce.startScale = new vec3(0, 0, 0);
+        this.scaleOnce.endScale = new vec3(1, 1, 1);
+
+        // Start scaling
+        this.scaleOnce.startScaling();
+
+        await this.delay(10000);
+
+        this.scaleOnce.startScale = new vec3(1, 1, 1);
+        this.scaleOnce.endScale = new vec3(0, 0, 0);
+
+        // Start scaling
+        this.scaleOnce.startScaling();
     }
  
     encodeImage(data: Uint8Array, width: number, height: number) {

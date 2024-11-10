@@ -24,9 +24,30 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    asianElephantAudio: false
+    blackRhinoAudio: false
+    butterflyGlobe: false
+    butterflyParticles: false
+    buttonInteractable: false
+    buttonMesh: false
+    camera: false
+    dolphinAudio: false
+    dolphinTrailSpiral: false
     interactable: false
+    monarchButterflyAudio: false
+    moveRandomDirections: false
     ocrController: false
+    octopusAudio: false
+    octopusBubble: false
+    placeInFrontCamera: false
     publicImage: false
+    readText: false
+    rhinoBoidsElephant: false
+    scaleOnce: false
+    seaTurtleAudio: false
+    seaTurtlesInteractiveBubbles: false
+    textHolder: false
+    textThreeD: false
     textToObject: false
   ScriptTypesHidden:
     {}
@@ -35,6 +56,27 @@
       publicImage: !<reference.Image> 00000000-0000-0000-0000-000000000000
       ocrController: !<MappingBased.OCRTypeScript> 00000000-0000-0000-0000-000000000000
       textToObject: !<MappingBased.TextToObject> 00000000-0000-0000-0000-000000000000
+      textHolder: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      textThreeD: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
+      placeInFrontCamera: !<MappingBased.PlaceInFrontCamera> 00000000-0000-0000-0000-000000000000
+      moveRandomDirections: !<MappingBased.MoveRandomDirections> 00000000-0000-0000-0000-000000000000
+      scaleOnce: !<MappingBased.ScaleOnce> 00000000-0000-0000-0000-000000000000
+      seaTurtleAudio: !<MappingBased.AudioPlayScript> 00000000-0000-0000-0000-000000000000
+      dolphinAudio: !<MappingBased.AudioPlayScript> 00000000-0000-0000-0000-000000000000
+      blackRhinoAudio: !<MappingBased.AudioPlayScript> 00000000-0000-0000-0000-000000000000
+      asianElephantAudio: !<MappingBased.AudioPlayScript> 00000000-0000-0000-0000-000000000000
+      monarchButterflyAudio: !<MappingBased.AudioPlayScript> 00000000-0000-0000-0000-000000000000
+      octopusAudio: !<MappingBased.AudioPlayScript> 00000000-0000-0000-0000-000000000000
+      seaTurtlesInteractiveBubbles: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      butterflyGlobe: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      butterflyParticles: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      dolphinTrailSpiral: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      octopusBubble: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rhinoBoidsElephant: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      buttonMesh: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      buttonInteractable: !<MappingBased.Interactable> 00000000-0000-0000-0000-000000000000
+      readText: !<reference.Text3D> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -43,3 +85,24 @@
     - // @input Interactable interactable
     - // @input Component.Image publicImage
     - // @input TextToObject textToObject
+    - // @input SceneObject textHolder
+    - // @input Component.Text3D textThreeD
+    - // @input PlaceInFrontCamera placeInFrontCamera
+    - // @input MoveRandomDirections moveRandomDirections
+    - // @input ScaleOnce scaleOnce
+    - // @input AudioPlayScript seaTurtleAudio
+    - // @input AudioPlayScript dolphinAudio
+    - // @input AudioPlayScript blackRhinoAudio
+    - // @input AudioPlayScript asianElephantAudio
+    - // @input AudioPlayScript monarchButterflyAudio
+    - // @input AudioPlayScript octopusAudio
+    - // @input SceneObject seaTurtlesInteractiveBubbles
+    - // @input SceneObject butterflyGlobe
+    - // @input SceneObject butterflyParticles
+    - // @input SceneObject dolphinTrailSpiral
+    - // @input SceneObject octopusBubble
+    - // @input SceneObject rhinoBoidsElephant
+    - // @input Component.Camera camera
+    - // @input Component.RenderMeshVisual buttonMesh
+    - // @input Interactable buttonInteractable
+    - // @input Component.Text3D readText

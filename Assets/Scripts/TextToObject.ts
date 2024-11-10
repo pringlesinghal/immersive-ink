@@ -1,4 +1,5 @@
 import { setTimeout } from "SpectaclesInteractionKit/Utils/debounce";
+import { ClickOnButtonTest } from "./Tests/ClickOnButtonTest";
 
 @component
 export class TextToObject extends BaseScriptComponent {
@@ -29,10 +30,13 @@ export class TextToObject extends BaseScriptComponent {
   private startPollTwo: number
   private endPollTwo: number
 
-  private globalDelay: Array<number> = [30, 5, 5, 5, 30, 30, 5];
+  private globalDelay: Array<number> = [30, 20, 30, 30, 30, 30, 15];
   private globalDelayCounter: number = 0;
 
   private cachedSceneObject: SceneObject
+
+  @input
+  clickOnButtonTest: ClickOnButtonTest
 
   onAwake = () => {
     print("Code started");
@@ -234,6 +238,14 @@ export class TextToObject extends BaseScriptComponent {
             if (this.cachedSceneObject) {
                 this.cachedSceneObject.enabled = false;
             }
+
+            this.clickOnButtonTest.buttonMesh.enabled = true;
+            this.clickOnButtonTest.buttonInteractable.enabled = true;
+            this.clickOnButtonTest.readText.enabled = true;
+
+            // Restore image preview.
+            this.clickOnButtonTest.publicImage.enabled = true;
+            this.clickOnButtonTest.restoreUpdateTracking();
 
             this.cachedSceneObject = glTFAsset.tryInstantiate(this.meshParent, this.pbrMaterialHolder);
           },

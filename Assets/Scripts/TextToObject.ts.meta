@@ -24,6 +24,7 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    clickOnButtonTest: false
     meshParent: false
     pbrMaterialHolder: false
     remoteServiceModule: false
@@ -33,6 +34,7 @@
     - remoteServiceModule: !<reference.RemoteServiceModule> 00000000-0000-0000-0000-000000000000
       pbrMaterialHolder: !<reference.Material> 00000000-0000-0000-0000-000000000000
       meshParent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      clickOnButtonTest: !<MappingBased.ClickOnButtonTest> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -40,3 +42,4 @@
     - // @input Asset.RemoteServiceModule remoteServiceModule
     - // @input Asset.Material pbrMaterialHolder
     - // @input SceneObject meshParent
+    - // @input ClickOnButtonTest clickOnButtonTest

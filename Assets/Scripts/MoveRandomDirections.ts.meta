@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/5cf64707-a66a-459f-bfb9-c88050fa4b39>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 372e8a32-872c-4f5b-81b4-d2f6d2e49232
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 372e8a32-872c-4f5b-81b4-d2f6d2e49232
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 3a63c15e-fd87-4987-b65c-11ea3e274d4f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/25cfee9c-5b02-4635-b466-1ed9ac2305e5>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/3a63c15e-fd87-4987-b65c-11ea3e274d4f>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    duration: false
+    endPos: false
+    startPos: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - startPos: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      endPos: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      duration: !<float> 2000.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input float duration = 2000
+    - // @input vec3 startPos
+    - // @input vec3 endPos
