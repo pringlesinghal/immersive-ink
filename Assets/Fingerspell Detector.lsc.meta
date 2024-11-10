@@ -80,7 +80,6 @@
     EventModule: !<reference> 691d8b9b-4e0b-43da-812b-f5d72d93844c
     Fingerspell Detector/Fingerspell Detector: !<reference> 740355e9-811d-466d-9c56-437aabae1836
     Hand Tracking Prefab: !<reference> 61da7cc8-23ac-488c-9cd2-400dfaf92603
-    Render Target 3: !<reference> d4a77b7e-e3ba-488d-96c0-9a665f6994d9
     af11b812dd1cf3b3: !<reference> d9e3aba6-f4c1-4276-ae67-fde22ed1acee
     afa3a35ddd04c72a: !<reference> 2af4bbfc-374d-47a8-9e72-5cc5cd3d5945
     b33ecfc65313672e: !<reference> ca957c2c-d010-4b2f-b675-ca574e648422

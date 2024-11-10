@@ -1,0 +1,28 @@
+- !<AssetImportMetadata/4f2323d5-9269-4957-90c2-c90da2c10770>
+  ImportedAssetIds:
+    AnimatedTexture: !<reference> 13aed068-8fee-4acc-a586-4576f43db38d
+    Hand_tap_to_sound_ripples.png: !<reference> b56f3da5-4900-42d2-a45f-db31f3847ed6
+  ImporterName: LensAnimationImporter
+  PrimaryAsset: !<reference> 13aed068-8fee-4acc-a586-4576f43db38d
+  PackageType: LegacyPackage
+  PackagePolicy: CannotBeUnpackedTransparent
+  AssetDataMap:
+    AnimatedTexture: !<own> f116dc1f-e925-4b69-8d91-f34706d975f3
+  DependentFiles:
+    - Hand_tap_to_sound_ripples.png
+  ImporterSettings: !<AssetImporterSettings/475887b6-3a5b-405e-9905-e10d785f3c39>
+    {}
+  CompressionSettings: !<SingleCompressionSettings/43dbd9ce-93a3-40cc-bcb0-e30d3ec22f90>
+    CompressorName: None
+    CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AnimatedTextureData/f116dc1f-e925-4b69-8d91-f34706d975f3>
+  AutoPlay: false
+  Reversed: false
+  PingPong: false
+  CurrentSequence: default
+  KeyFramesData:
+    default:
+      - time: 0.000000
+        value: 0
+      - time: 1.333333
+        value: 20

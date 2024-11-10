@@ -5,11 +5,12 @@
     .hidden/SpritePreset.lsmat|SpritePreset.lsmat|GraphPassInfo: !<reference> 9a128d6f-d316-43af-b5c1-e2530c28e900
     .hidden/SpritePreset1.lsmat: !<reference> 928579bd-646d-41fc-9c15-73c738d5e55b
     .hidden/Textures/Image.png: !<reference> 1f38abc4-5954-4f57-82de-60dc1cbf9638
-    0516d4394d9bff5d: !<reference> 663b7f74-a748-4390-80bf-3c63459fc81d
-    05cf1add5156bb3b: !<reference> 7bb5978e-c484-4d18-885e-652417032a2c
-    1f6a32742372cfc1: !<reference> a4e7886f-a357-4516-a221-5504f6241b5d
-    4e21fc0fecfa4160: !<reference> 2b34f152-3d95-4d68-8f4c-cfc12cd77417
-    7e84ea437deb13e8: !<reference> 4b598b4f-bb11-4954-b422-6d54befedda7
+    1a4a342a9f3ee934: !<reference> e50e3262-c3d0-40a8-a21b-5629638c1a2a
+    2480d9d5fd46ec7d: !<reference> e474f5ab-8f1f-412f-ba6b-2f42373ce0a8
+    47e6665242444d87: !<reference> 2bd505e5-d228-4144-a094-bc7bf7bf080c
+    78eb44c698a6c45e: !<reference> a647ccbf-ef14-4dea-b6a9-3d3bb66e8c2a
+    7b0839fcfc5ee6ec: !<reference> 05b02bdb-67f0-47bf-9585-05b13bff1cdd
+    9359e77ae03801c9: !<reference> b0db1803-84eb-4cbb-b899-dd1d34b1b096
     Default Prefabs/Button Background 2: !<reference> 27539cd5-47a6-4ed0-aca6-5b868f17ed82
     Default Prefabs/Button Foreground 2: !<reference> a215aafe-e567-4900-a7db-ee44d1984223
     Default Prefabs/Button Text 2: !<reference> 64cd3125-4719-4496-a16e-0150d63edcc7
@@ -21,10 +22,9 @@
     Modules/UIWidgetsModule_120: !<reference> a334c54f-23d1-4553-852d-5e90b1d14cd9
     Scripts/UI Button/UI Button: !<reference> aec5dfd3-9135-4742-92ce-3512090d1cf6
     Textures/Button_10X 2: !<reference> 2be9e3f8-0ccb-43c7-bc88-c8bf341ae098
-    a30a29d52efb1535: !<reference> c6663395-07eb-41a2-9def-301c8061a5ad
-    c090e3603ba1cd7b: !<reference> d2dee5f7-b43c-4625-889f-508cb2a48603
-    ee6e66197fce5a50: !<reference> 66d4b312-5f5b-4961-ba98-754ae7e1ae8c
-    f380ad10aca9fa74: !<reference> 34a6ee4e-f1be-43b4-a718-3be42f53d409
+    a05356d373cef7f3: !<reference> 9854c897-9df8-4d17-bcd2-680f71ff069e
+    a394b91ebf4f2d1e: !<reference> 88672801-6afd-4926-b44d-d235179ddf2e
+    c64c9170f79e0347: !<reference> c07478c7-be8a-4795-860f-330b761c0903
   ImporterName: LensCoreImporter
   PrimaryAsset: !<reference> aec5dfd3-9135-4742-92ce-3512090d1cf6
   PackageType: LegacyPackage
