@@ -1,5 +1,7 @@
 # immersive-ink
 
+#### Winner of Immerse the Bay 2024, the Stanford XR Hackathon -- Built for Snapchat Spectacles!
+
 ## Inspiration
 Our team is driven by the goal of building for social good. We are excited about the possibilities of XR for making education fun, interactive, and immersive and with our project we wanted to transform any dull text into 3D objects narrating their stories. With exciting opportunities for integrating AI with XR, our project makes extensive use of different AI pipelines to build seamless interactive experiences. The Snapchat Spectacles offered a powerful and easy-to-use platform for bringing our ideas to life and we are excited to share this project with the world.
 
